@@ -1,0 +1,238 @@
+<!--******************************************* Icludes ******************************************************************-->
+<!DOCTYPE html>
+<html><head>
+<title>وزارة الدفاع الوطني -الجزائر</title>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/site_principal/assets/css/bootstrap.minAr.css">
+<link rel="stylesheet" type="text/css" href="/site_principal/assets/css/style.pagesAr.css">
+<link rel="stylesheet" type="text/css" href="/site_principal/assets/css/styleAr.css">
+</head>
+<body>
+ <!--************************************************************* Preloader et flèche scrollToTop *************************************************************************************-->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"> &#x2303; </a>
+ <!-- header -->
+<div class="container">
+  <header id="header">
+    
+<style>
+.navbar {
+--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+</style>
+
+    <link rel="shortcut icon" href="https://www.mdn.dz/site_principal/images/mdn_nav.png" type="image/png">
+
+
+    <div class="header_bottom">
+      <div class="row">
+        <div class="col-lg-8  col-md-8 ">
+          <div class="Banniere wow fadeInRight "><a href="https://www.mdn.dz" class="logo"><img src="https://www.mdn.dz/site_principal/images/banniere_ar.png" alt=""/></a></div>
+          <div class="Banniere2 wow fadeInRight "><a href="https://www.mdn.dz" class="logo2"><img src="https://www.mdn.dz/site_principal/images/banniere_ar2.png" alt=""/></a></div>
+        </div>
+        <!-- menu langue -->
+        <div class="col-lg-4  col-md-4 d-flex align-items-center ">
+          <div class="menu-langue">
+            <a href="https://www.mdn.dz" class="home"><img src="https://www.mdn.dz/site_principal/images/home.png"/></a>
+            <a href="https://www.mdn.dz/site_principal/accueil_fr.php" class="na" title="النسخة الفرنسية" style="font-size:18px; font-weight:bold;">Fr</a>
+            <a href="https://www.mdn.dz/site_principal/accueil_an.php" class="na" title="النسخة الإنجليزية" style="font-size:20px; font-weight:bold;">En</a>
+            <a href="https://www.mdn.dz/rss_ar.xml" class="rss"> <img src="https://www.mdn.dz/site_principal/images/rss.png"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- menu -->
+  <section id="navArea">
+    <nav class="navbar navbar-inverse navbar-expand-lg" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed mx-1" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="navbar-toggler-icon"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav ">
+          <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown" role="button" aria-expanded="false">تقديــم</a>
+            <ul class="dropdown-menu" role="menu">
+						<li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/presentation/cem-ar.php">
+            الوزير المنتدب لدى وزير الدفاع الوطني، رئيس أركان
+            <br class="d-md-none"/>
+             الجيش الوطني الشعبي
+            </a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/presentation/ministere_ar.php">الـــوزارة</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/presentation/histoire_ar.php">تاريخ الجيش</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/presentation/armoiries_ar.php">الشعـــارات</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/presentation/mca/mca_ar.php">المتحف المركـــزي للجيش</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="https://www.mdn.dz/site_principal/sommaire/actualites/ar/actualites_ar.php">مستجــدات</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/actualites/ar/actualites_ar.php">مستجــدات</a>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/mdnews/mdnews_ar.php">التطبيقة المحمولة "MDNews"</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown" role="button" aria-expanded="false">منشـــورات</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/revues/revue_el_djeich_ar.php">مجلـــة الجيش</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/revues/revues_science_ar.php">مجــــلات علمية مُحكَّمة</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/revues/revue_mca_ar.php">مجلة المتحف المركزي للجيش </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown" role="button" aria-expanded="false">التجنيد والتكويـــن</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/recrutement/recrutement_ar.php">تجنيد المستخدمين العسكريين</a></li>
+               <!--  <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/recrutement/recrutement_pca_ar.php">توظيف المستخدمين المدنيين الشبيهين</a></li> -->
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/recrutement/structures_formation_ar.php">هياكل التكوين</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="https://www.mdn.dz/site_principal/sommaire/service/service_ar.php">الخدمة الوطنية</a></li>
+          
+          <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown" role="button" aria-expanded="false">عروض ومنتوجات</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/appels/appels_ar.php">طــلب عـــروض</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/fabrication/fabrications_militaires_ar.php">صناعات عسكرية</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="https://www.mdn.dz/site_principal/sommaire/sport/ar/sport_ar.php">رياضة</a></li>
+
+          <li class="nav-item dropdown"><a href="#" class="nav-link" data-bs-toggle="dropdown" role="button" aria-expanded="false">أرشيف</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/archives/archives_actualites_ar.php">مستجدات</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/sport/ar/archives_sport_ar.php">رياضة</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/essalil/archives_essalil_ar.php">السليل</a></li>
+              <li><a class="dropdown-item" href="https://www.mdn.dz/site_principal/sommaire/appels/archives_appels_ar.php">طلب عروض</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+      </div>
+
+    </nav>
+    <div class="Redline"></div>
+  </section>   <!--************************************************************* Articles *************************************************************************************-->
+  <section id="contentSection">
+      
+     
+      <br/>
+
+    <div class="row">
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="left_content">
+          <div class="single_page">
+            	
+                
+<!-- **********************************************************************************************************************************************************************************-->
+
+<center><img src="/site_principal/images/error.jpg" /></center>
+
+
+
+<div class="text_com">
+<p align="center">
+Sorry – we can't find that page<br/>
+
+
+The address could have been entered incorrectly<br/>
+
+
+Please click <a href="https://www.mdn.dz">here</a> for the homepage<br/>     
+   </p>
+   </div>
+   
+    </div>
+    </div>
+    </div>
+    </div>
+    </section> 
+<br/>
+<br/>
+
+ <!--************************************************************* Pied de Page *************************************************************************************-->
+
+        <footer id="footer">
+         <div class="Redline" style="margin:0px"></div>
+         <div class="footer_bottom wow fadeInLeft">
+
+             <div class="row">
+                 <div class="col-sm-6 order-sm-2">
+
+                     <center>
+                         <a href="https://www.mdn.dz"><img src="https://www.mdn.dz/site_principal/images/mdn.png" alt="" /></a>
+                         <br />
+
+                         <p class="mb-0">
+
+                             وزارة الـــدفاع الوطني
+                             <br />
+                             ص.ب 184 -الجزائر محطة- الجزائر
+                             <br />
+                             الهاتف: 021.71.15.15
+                             <br />
+                             <img src="https://www.mdn.dz/site_principal/images/email.png" alt="" />:البريد الإلكتروني
+                             <br />
+
+                         </p>
+
+                         <table dir="rtl">
+                             <tr>
+
+                                 <td><a href="https://www.facebook.com/mdn.gov.dz" target="_blank"><img src="https://www.mdn.dz/site_principal/images/fb.png" alt="" width="40px" height="40px" /></a>
+                                 </td>
+
+                                 <td><a href="https://x.com/mdnGovDz" target="_blank"><img src="https://www.mdn.dz/site_principal/images/x.png" alt="" width="40px" height="40px" /></a>
+                                 </td>
+
+                                 <td><a href="https://www.youtube.com/@mdn-tube" target="_blank"><img src="https://www.mdn.dz/site_principal/images/yt.png" alt="" width="40px" height="40px" /></a>
+                                 </td>
+
+                                 <td><a href="https://www.tiktok.com/@mdn_gov_dz" target="_blank"><img src="https://www.mdn.dz/site_principal/images/tt.png" alt="" width="40px" height="40px" /></a>
+                                 </td>
+
+                                <td><a href="https://www.instagram.com/mdn.gov.dz" target="_blank"><img src="https://www.mdn.dz/site_principal/images/insta.png" alt="" width="40px" height="40px" /></a>
+                                 </td>
+                                 
+                             </tr>
+                         </table>
+
+
+                     </center>
+
+                 </div>
+
+                 <div class="col-sm-6 order-sm-1">
+
+                     <ul>
+                         <li><a href="https://www.mdn.dz/site_em_anp/index.php">أركان الجيش الوطني الشعبي</a>&nbsp;&nbsp;&nbsp</li>
+                         <li><a href="https://www.mdn.dz/site_cft/index.php">القوات البرية</a>&nbsp;&nbsp;&nbsp</li>
+                         <li><a href="https://www.mdn.dz/site_cfa/index.php">الـقـوات الـجـويـة</a>&nbsp;&nbsp;&nbsp</li>
+                         <li><a href="https://www.mdn.dz/site_cfn/index.php">القوات البحرية</a>&nbsp;&nbsp;&nbsp;</li>
+                         <li><a href="https://www.mdn.dz/site_cfdat/index.php">قوات الدفاع الجوي عن الإقليم</a>&nbsp;&nbsp;&nbsp;</li>
+                         <li><a href="https://www.mdn.dz/site_cgn/index.php">الدرك الوطني</a>&nbsp;&nbsp;&nbsp;</li>
+                         <li><a href="https://www.mdn.dz/site_cgr/index.php">الحرس الجمهوري</a>&nbsp;&nbsp;&nbsp;</li>
+                     </ul>
+
+
+                 </div>
+             </div>
+         </div>
+
+
+
+     </footer>  
+
+
+
+</div>
+<script src="/site_principal/assets/js/jquery.min.js"></script> 
+<script src="/site_principal/assets/js/bootstrap.min.js"></script> 
+<script src="/site_principal/assets/js/slick.min.js"></script> 
+<script src="/site_principal/assets/js/jquery.fancybox.pack.js"></script> 
+<script src="/site_principal/assets/js/custom.js"></script>
+</body>
+</html>
