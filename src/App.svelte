@@ -2,6 +2,8 @@
   import { onMount } from 'svelte';
   import Map from './lib/Map.svelte';
 
+  const base = import.meta.env.BASE_URL;
+
   let index = 0;
 
   // Maps each scroll section index to a camera step in Map.svelte
@@ -155,7 +157,7 @@
           <p>Tamanrasset, Algeria's southernmost major city, sits at the junction of trans-Saharan smuggling routes. ANP reports from this region frequently document the surrender of armed militants — many crossing from northern Mali where armed groups remain active.</p>
         </div>
         <div class="report-image" class:visible={v(3)}>
-          <img src="/data/anp_output/images/2024-02-07/img_01.jpg" alt="ANP operational report — Tamanrasset" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-02-07/img_01.jpg" alt="ANP operational report — Tamanrasset" loading="lazy" />
           <p class="img-caption">ANP press image — Tamanrasset region, February 2024</p>
         </div>
       </div>
@@ -195,7 +197,7 @@
           <p>The Illizi wilaya borders Libya to the east, a country where weapons have circulated widely since 2011. Operations here are documented less frequently than in the Mali-border zone but show a consistent pattern of arms interdiction.</p>
         </div>
         <div class="report-image" class:visible={v(7)}>
-          <img src="/data/anp_output/images/2024-01-10/img_11.jpg" alt="ANP operational report — Illizi" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-01-10/img_11.jpg" alt="ANP operational report — Illizi" loading="lazy" />
           <p class="img-caption">ANP press image — Illizi region, January 2024</p>
         </div>
       </div>
@@ -263,7 +265,7 @@
           <p>El Oued appeared in <strong>18 separate report weeks</strong> — more than any other city in the dataset. The region's proximity to Tunisia makes it a key transit point, and ANP operations here consistently document large cannabis hauls alongside arrests of trafficking networks.</p>
         </div>
         <div class="report-image" class:visible={v(12)}>
-          <img src="/data/anp_output/images/2024-01-17/img_06.jpg" alt="ANP operational report — El Oued" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-01-17/img_06.jpg" alt="ANP operational report — El Oued" loading="lazy" />
           <p class="img-caption">ANP press image — El Oued region, January 2024</p>
         </div>
       </div>
@@ -285,7 +287,7 @@
           <p>Ouargla's central position in the Algerian Sahara makes it a strategic interdiction point. ANP images from the region consistently show large quantities of packaged drugs alongside seized vehicles — often 4x4 trucks adapted for desert crossings.</p>
         </div>
         <div class="report-image" class:visible={v(14)}>
-          <img src="/data/anp_output/images/2024-01-10/img_06.jpg" alt="ANP operational report — Ouargla" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-01-10/img_06.jpg" alt="ANP operational report — Ouargla" loading="lazy" />
           <p class="img-caption">ANP press image — Ouargla region, January 2024</p>
         </div>
       </div>
@@ -307,7 +309,7 @@
           <p>The <strong>7,306 kg of cocaine</strong> seized over 22 months is notable. Cocaine has historically been rare in North Africa but is increasingly documented in Algerian military reports — likely transiting from West Africa via Saharan smuggling networks en route to European markets.</p>
         </div>
         <div class="report-image" class:visible={v(16)}>
-          <img src="/data/anp_output/images/2024-01-24/img_04.jpg" alt="ANP operational report — Tebessa" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-01-24/img_04.jpg" alt="ANP operational report — Tebessa" loading="lazy" />
           <p class="img-caption">ANP press image — Tebessa region, January 2024</p>
         </div>
       </div>
@@ -360,7 +362,7 @@
           <p>The Tamanrasset region sits above some of Algeria's richest alluvial gold deposits. Tens of thousands of artisanal miners — many from sub-Saharan Africa — enter Algeria through porous southern borders to work illegal mining sites. The <strong>26,007 generators</strong> seized points to the industrial scale of operations: generators power the water pumps used to sluice gold from riverbeds.</p>
         </div>
         <div class="report-image" class:visible={v(20)}>
-          <img src="/data/anp_output/images/2024-02-14/img_01.jpg" alt="ANP operational report — gold mining equipment" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-02-14/img_01.jpg" alt="ANP operational report — gold mining equipment" loading="lazy" />
           <p class="img-caption">Seized gold mining equipment — Tamanrasset region, February 2024</p>
         </div>
       </div>
@@ -400,7 +402,7 @@
           <p>At <strong>35,658 arrests over 22 months</strong> — roughly 1,600 per month — illegal gold mining is by far the most common enforcement action in the ANP dataset. It dwarfs terrorism arrests by a factor of 25 and raises questions about what drives so many people to risk arrest in Algeria's brutal desert conditions.</p>
         </div>
         <div class="report-image" class:visible={v(24)}>
-          <img src="/data/anp_output/images/2025-09-10/img_02.jpg" alt="ANP operational report — Adrar" loading="lazy" />
+          <img src="{base}data/anp_output/images/2025-09-10/img_02.jpg" alt="ANP operational report — Adrar" loading="lazy" />
           <p class="img-caption">ANP press image — Adrar region, September 2025</p>
         </div>
       </div>
@@ -448,7 +450,7 @@
     <section class="scroll-section info-section" data-index="28">
       <div class="prose-block">
         <div class="report-image" class:visible={v(28)}>
-          <img src="/data/anp_output/images/2024-01-17/img_05.jpg" alt="ANP operational report — Khenchela" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-01-17/img_05.jpg" alt="ANP operational report — Khenchela" loading="lazy" />
           <p class="img-caption">ANP press image — Khenchela region, January 2024</p>
         </div>
       </div>
@@ -470,7 +472,7 @@
           <p>The clustering of weapons seizures in the northeast — Batna, Khenchela, Constantine, Tebessa — points to a distinct regional dynamic compared to the south. These are not Saharan smuggling routes but denser, more urban networks operating in Algeria's most populated corridor.</p>
         </div>
         <div class="report-image" class:visible={v(30)}>
-          <img src="/data/anp_output/images/2024-03-06/img_05.jpg" alt="ANP operational report — Constantine" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-03-06/img_05.jpg" alt="ANP operational report — Constantine" loading="lazy" />
           <p class="img-caption">ANP press image — Constantine region, March 2024</p>
         </div>
       </div>
@@ -540,7 +542,7 @@
           </div>
         </div>
         <div class="report-image" class:visible={v(35)}>
-          <img src="/data/anp_output/images/2024-01-10/img_13.jpg" alt="ANP operational report — Skikda" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-01-10/img_13.jpg" alt="ANP operational report — Skikda" loading="lazy" />
           <p class="img-caption">ANP press image — Skikda region, January 2024</p>
         </div>
       </div>
@@ -562,7 +564,7 @@
           <p>The ANP figures document interceptions — people caught. They do not capture those who made it through, those who died in the desert or at sea, or those expelled without official documentation. Organisations like <strong>Alarm Phone Sahara</strong> have documented hundreds of cases of migrants abandoned in the desert after Algerian military expulsions.</p>
         </div>
         <div class="report-image" class:visible={v(37)}>
-          <img src="/data/anp_output/images/2024-10-02/img_11.jpg" alt="ANP operational report — Annaba" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-10-02/img_11.jpg" alt="ANP operational report — Annaba" loading="lazy" />
           <p class="img-caption">ANP press image — Annaba region, October 2024</p>
         </div>
 
