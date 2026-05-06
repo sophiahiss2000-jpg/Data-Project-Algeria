@@ -61,7 +61,7 @@
   onMount(() => {
     map = new maplibregl.Map({
       container: mapContainer,
-      style: 'https://tiles.stadiamaps.com/styles/alidade_satellite.json',
+      style: `https://api.maptiler.com/maps/hybrid/style.json?key=7TyXJh8hnKEgTbuQzBEc`,
       center: steps[0].center,
       zoom: steps[0].zoom,
       pitch: 0, bearing: 0,
