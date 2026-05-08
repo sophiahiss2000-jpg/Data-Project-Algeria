@@ -32,6 +32,11 @@ This project is built on an **original dataset** assembled from primary sources.
 - 981 firearms seized
 
 ---
+## Content Warning
+
+This repository contains press images downloaded directly from the Algerian Ministry of Defence website. These images are unfiltered official military documentation and include graphic content — among them photographs of killed individuals, human remains, and victims of violence. Viewer discretion is strongly advised.
+
+The author has not selected, staged or edited these images. They are reproduced as published by the ANP for the purposes of journalistic documentation.
 
 ## Methodology & Limitations
 
