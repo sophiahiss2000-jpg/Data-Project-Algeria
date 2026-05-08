@@ -167,16 +167,16 @@
     <section class="scroll-section" data-index="4">
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.terrorism}">01 — Counter-Terrorism</span>
-        <h2>Bordj Badji Mokhtar</h2>
-        <p>One of Algeria's most remote outposts, Bordj Badji Mokhtar lies at the border of Mali. It appears repeatedly in ANP reports as a location where armed individuals surrendered to military authorities, often carrying Kalashnikovs and ammunition.</p>
+        <h2>One Town. One Third of All Reports.</h2>
+        <p>Of all the towns in Algeria's vast southern interior, one name stands out with striking consistency: Bordj Badji Mokhtar, a remote outpost a few kilometres from the Malian border. A text analysis of all 143 weekly reports found it mentioned in a counter-terrorism context in <strong>33 separate reports</strong> — more than twice the frequency of any other city.</p>
       </div>
     </section>
 
     <section class="scroll-section info-section" data-index="5">
       <div class="prose-block">
         <div class="info-text" class:visible={v(5)}>
-          <span class="label">Surrender Operations</span>
-          <p>Across the reporting period, the ANP documented <strong>56 surrenders</strong> of armed individuals — many at Bordj Badji Mokhtar. The reports note surrenders of individuals named alongside their <em>nom de guerre</em>, suggesting these were known militant figures rather than low-level combatants.</p>
+          <span class="label">Algeria's Most Watched Bordertown</span>
+          <p>The ANP reports describe surrenders of armed individuals at Bordj Badji Mokhtar with near-weekly regularity, often naming militants alongside their <em>nom de guerre</em>. This suggests the military is not just documenting anonymous arrests but tracking known figures — a pattern more consistent with an active intelligence operation than routine border policing. With northern Mali's armed groups still active across the border, this small town has become Algeria's primary interface with the Sahel's ongoing insurgency.</p>
         </div>
       </div>
     </section>
@@ -208,7 +208,7 @@
       <div class="prose-block">
         <div class="info-text" class:visible={v(8)}>
           <span class="label">Counter-Terrorism in Context</span>
-          <p>Algeria has not experienced a major terrorist attack since the 2013 In Amenas hostage crisis. But the military maintains a substantial presence in the south, and weekly reports suggest ongoing low-level operations — arrests, surrenders, and weapons seizures — continue at a steady pace. The <strong>1,158 support network arrests</strong> over 22 months points to an extensive logistics and supply chain being systematically dismantled.</p>
+          <p>Algeria has not experienced a major terrorist attack since the 2013 In Amenas hostage crisis. Yet the weekly cadence of surrenders, arrests and arms seizures documented in these reports tells a story of sustained low-level conflict. The <strong>1,158 support network arrests</strong> over 22 months — roughly 53 per month — suggests a logistics and financing infrastructure that is being systematically dismantled, week by week, in the Saharan interior.</p>
         </div>
       </div>
     </section>
@@ -331,8 +331,9 @@
     <section class="scroll-section" data-index="18">
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.gold}">03 — Illegal Gold Mining</span>
-        <h2>The Gold Rush in Algeria's South</h2>
-        <p>One of the most striking findings in the ANP data is the scale of illegal artisanal gold mining — <em>orpaillage</em> — in Algeria's deep south. Over 35,000 people were arrested for illegal mining between January 2024 and October 2025.</p>
+        <h2>1,600 Arrests a Month</h2>
+        <p>Nothing in the ANP data is more startling in scale than the illegal gold mining figures. Between January 2024 and October 2025, Algerian military units arrested <strong>35,658 people</strong> for illegal artisanal mining — <em>orpaillage</em> — in the country's deep south. That is roughly 1,600 arrests every single month, dwarfing every other category by a factor of more than twenty.</p>
+        <p>Every gold-related paragraph in the 143 reports names the same four locations: Tamanrasset, Bordj Badji Mokhtar, Illizi and In Guezzam — a corridor running along Algeria's southern border from Mali to Libya.</p>
       </div>
     </section>
 
@@ -358,8 +359,8 @@
     <section class="scroll-section info-section" data-index="20">
       <div class="prose-block">
         <div class="info-text" class:visible={v(20)}>
-          <span class="label">Tamanrasset — Gold Mining Hub</span>
-          <p>The Tamanrasset region sits above some of Algeria's richest alluvial gold deposits. Tens of thousands of artisanal miners — many from sub-Saharan Africa — enter Algeria through porous southern borders to work illegal mining sites. The <strong>26,007 generators</strong> seized points to the industrial scale of operations: generators power the water pumps used to sluice gold from riverbeds.</p>
+          <span class="label">Tamanrasset — Where the Gold Rush Begins</span>
+          <p>The Tamanrasset region sits above some of Algeria's richest alluvial gold deposits. Tens of thousands of miners — the vast majority from Mali, Niger and other sub-Saharan countries — cross porous desert borders to reach them. The <strong>26,007 generators</strong> seized over 22 months gives a sense of the operation's industrial character: generators power the water pumps used to sluice gold from riverbeds, and seizing them is the ANP's primary strategy for disrupting sites rather than simply arresting individuals.</p>
         </div>
         <div class="report-image" class:visible={v(20)}>
           <img src="{base}data/anp_output/images/2024-02-14/img_01.jpg" alt="ANP operational report — gold mining equipment" loading="lazy" />
@@ -398,8 +399,8 @@
     <section class="scroll-section info-section" data-index="24">
       <div class="prose-block">
         <div class="info-text" class:visible={v(24)}>
-          <span class="label">Scale of the Problem</span>
-          <p>At <strong>35,658 arrests over 22 months</strong> — roughly 1,600 per month — illegal gold mining is by far the most common enforcement action in the ANP dataset. It dwarfs terrorism arrests by a factor of 25 and raises questions about what drives so many people to risk arrest in Algeria's brutal desert conditions.</p>
+          <span class="label">Who Are the Miners?</span>
+          <p>The ANP reports rarely describe the backgrounds of those arrested, referring to them only as "individuals" apprehended during illegal mining operations. But researchers working the Sahel gold economy have documented that most artisanal miners are economic migrants — men who have travelled thousands of kilometres from Mali, Guinea, Burkina Faso and Niger seeking the deposits that lie beneath Algeria's southern desert. At <strong>35,658 arrests in 22 months</strong>, the data suggests that for many, the risk of detention is a price worth paying.</p>
         </div>
         <div class="report-image" class:visible={v(24)}>
           <img src="{base}data/anp_output/images/2025-09-10/img_02.jpg" alt="ANP operational report — Adrar" loading="lazy" />
@@ -414,8 +415,8 @@
     <section class="scroll-section" data-index="25">
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.weapons}">04 — Weapons Seizures</span>
-        <h2>Batna — Firearms in the Northeast</h2>
-        <p>Batna, in Algeria's northeast Aurès mountains, is the city that appears most frequently in the weapons seizure data. The region has a history of armed conflict going back to the 1990s civil war and continues to see regular firearms interdictions.</p>
+        <h2>The Northeast's Arms Problem</h2>
+        <p>While counter-terrorism operations are concentrated in the Saharan south, the weapons seizure data tells a different geographic story. The hotspot here is Algeria's rugged northeast — the Aurès mountains and the Tunisian border corridor — where firearms interceptions cluster around Batna, Khenchela, Tebessa and Constantine. Text analysis found Khenchela mentioned in a weapons context in <strong>nine separate reports</strong>, more than any other northeastern city.</p>
       </div>
     </section>
 
@@ -570,7 +571,7 @@
 
         <div class="end-note">
           <p><strong>Data:</strong> Algerian Ministry of Defence operational reports, January 2024 – October 2025. Scraped and analysed by the author. Image geolocation via OCR + OpenStreetMap Nominatim.</p>
-          <p><strong>Methodology note:</strong> Numbers are extracted from structured tables in ANP weekly reports. Some weeks contain NA values where table structure differed. Totals should be treated as conservative minimums.</p>
+          <p><strong>Methodology note:</strong> Aggregate statistics (arrests, seizures) are extracted from structured tables and are national totals — they cannot be attributed to individual cities. Location references in the article are derived from paragraph-level text analysis of 143 full report texts: a city name and theme keyword appearing in the same paragraph was used as a proxy for operational location. Totals should be treated as conservative minimums.</p>
         </div>
       </div>
     </section>
