@@ -1,6 +1,61 @@
-# Algeria Scrollytelling — Svelte + MapLibre GL
+# Tracking Algerian Military Activity
+### A Data Journalism Investigation — Spring 2026
 
-A Bellingcat-style scrollytelling article template built with **Svelte**, **MapLibre GL JS** (no API key needed), and **svelte-scroller**.
+A scrollytelling investigation built with **Svelte**, **MapLibre GL JS**, and **satellite imagery**, analysing an original dataset of 143 weekly operational reports published by Algeria's Armée Nationale Populaire (ANP) between January 2024 and October 2025.
+
+🔗 **Live:** https://data-journalism-26.github.io/final-project-sophiahiss4/
+
+---
+
+## The Dataset
+
+This project is built on an **original dataset** assembled from primary sources. No pre-existing dataset was used.
+
+**Data collection pipeline:**
+
+| Step | Method | Output |
+|---|---|---|
+| Web scraping | R (`rvest`, `httr`) | 143 weekly ANP reports scraped from [mdn.dz](https://www.mdn.dz) |
+| Table extraction | Arabic keyword matching | 28-column CSV with arrests/seizures per category |
+| Image downloading | Automated via scraper | 1,110 press images |
+| Image geolocation | OCR (Tesseract Arabic) + OpenStreetMap Nominatim | Coordinates for 133 images |
+| Full-text scraping | Second-pass scraper | Complete Arabic report texts |
+| Text mining | Paragraph-level Arabic keyword matching | Location-theme frequency table |
+
+**Key figures (Jan 2024 – Oct 2025):**
+- 54,769 migrants arrested
+- 35,658 people arrested for illegal gold mining
+- 58 million psychotropic pills seized
+- 23,639 kg cannabis seized
+- 7,306 kg cocaine seized
+- 56 terrorists surrendered; 1,158 support network members arrested
+- 981 firearms seized
+
+---
+
+## Methodology & Limitations
+
+### What the data shows
+The ANP weekly reports contain structured tables with operational statistics and prose descriptions of where operations took place. The dataset captures all reports published in Arabic during the 22-month period.
+
+### Limitations
+- **No location attribution for statistics:** The ANP reports aggregate numbers nationally. Drug seizure quantities and gold mining arrests cannot be attributed to specific cities from the structured data alone.
+- **Location-theme matching is text-based:** City mentions in report texts are matched at paragraph level. Because Bordj Badji Mokhtar, Tamanrasset, Illizi and In Guezzam are routinely listed together in the gold mining paragraph, co-occurrence does not imply exclusive association.
+- **OCR accuracy:** Arabic OCR via Tesseract produces misreads for some city names. Known errors were patched manually; unknown errors may remain.
+- **Coverage:** Reports run January 2024 to October 2025. Earlier periods are not included.
+
+---
+
+## Avenues for Future Research
+
+### LLM-based image analysis
+The 1,110 ANP press images could be passed through a vision-capable LLM (e.g. Claude, GPT-4o) with a structured prompt to identify equipment visible in each image — generators, metal detectors, drug packages, weapons, migrants. Combined with the geolocation data already extracted, this would produce a precise `location | equipment_type | date` dataset that circumvents the text-attribution problem entirely. At approximately $0.01 per image, the full corpus would cost around $11 to process.
+
+### Longitudinal trend analysis
+With a second scraping run covering 2022-2023, it would be possible to test whether gold mining arrest rates correlate with gold price fluctuations, or whether terrorism operation tempo tracks regional events in Mali and Libya.
+
+### Cross-referencing with NGO data
+Systematic cross-referencing of ANP migration arrest figures with Alarm Phone Sahara incident reports could shed light on the gap between official arrest statistics and documented expulsions.
 
 ---
 
@@ -19,139 +74,37 @@ Open http://localhost:5173
 
 ```
 src/
-├── App.svelte          ← Main article layout + scroll logic
-├── main.js             ← Entry point
+├── App.svelte              <- Main article + scroll logic
+├── main.js                 <- Entry point
 └── lib/
-    ├── Map.svelte      ← MapLibre GL sticky map + camera steps
-    └── InfoBox.svelte  ← Three info panel types: text, stat, chart
+    └── Map.svelte          <- MapLibre GL sticky map + camera steps
+
+public/
+└── data/
+    └── anp_output/
+        ├── anp_clean.csv                    <- 143 reports, 28 numeric columns + full text
+        ├── anp_image_locations.csv          <- 1,110 images with OCR-derived coordinates
+        ├── anp_location_themes.csv          <- Raw location-theme mentions
+        └── anp_location_themes_summary.csv
+        images/                              <- 1,110 downloaded ANP press images
+
+R scripts:
+├── anp_scraper.R           <- Web scraper (reports + images)
+├── anp_clean.R             <- Table extraction + deduplication
+├── anp_ocr_geo.R           <- Image OCR + geolocation
+└── anp_fulltext_scraper.R  <- Full Arabic text re-scraper
 ```
 
 ---
 
-## How the Scrollytelling Works
+## AI Disclosure
 
-### The Scroller (`svelte-scroller`)
+This project used AI assistance (Claude, Anthropic) during development for:
+- Debugging R scraping and OCR scripts
+- Writing and iterating on Svelte/MapLibre GL components
+- Advising on text-mining methodology
 
-`<Scroller>` from `svelte-scroller` tracks which section is in the viewport and exposes:
-
-- `index` — index of the currently active `<section>` in the foreground
-- `offset` — 0–1 progress within the current section
-- `progress` — 0–1 overall progress through all sections
-
-The **background slot** holds the sticky map. The **foreground slot** holds all scrolling content.
-
-### Map Steps
-
-In `Map.svelte`, the `steps` array defines each camera position:
-
-```js
-const steps = [
-  { center: [2.63, 28.03], zoom: 4.5, pitch: 0,  bearing: 0  },  // 0 — full Algeria
-  { center: [3.06, 36.75], zoom: 10,  pitch: 40, bearing: -10 },  // 1 — Algiers
-  { center: [-8.14, 27.67], zoom: 10, pitch: 30, bearing: 15  },  // 2 — Tindouf
-  // …and so on
-];
-```
-
-### Mapping Scroll Sections → Map Steps
-
-In `App.svelte`, the `indexToMapStep` array maps each scroll section index to a camera step:
-
-```js
-const indexToMapStep = [0, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6];
-//                      ^intro  ^algiers×3  ^tindouf×3  ^overview×2  ^bordj×3  ^guezzam×2  ^coast×2
-```
-
-This means you can have multiple scroll sections (text, info boxes, charts) all showing the same map view — the map only moves when the index crosses a boundary.
-
----
-
-## Customising
-
-### Adding a New Camera Position
-
-1. Add an entry to `steps[]` in `Map.svelte`:
-   ```js
-   { center: [lon, lat], zoom: 12, pitch: 45, bearing: 0 }
-   ```
-
-2. Add a new section in `App.svelte` foreground:
-   ```svelte
-   <section class="scroll-section" data-index="N">
-     <div class="prose-block">
-       <span class="section-tag">Stop XX — Label</span>
-       <h2>City Name</h2>
-       <p>Your text here.</p>
-     </div>
-   </section>
-   ```
-
-3. Update `indexToMapStep` to include the new step index.
-
-### InfoBox Types
-
-#### Text box
-```svelte
-<InfoBox type="text" visible={showInfo.myKey}>
-  <span class="label">Label text</span>
-  <p>Your paragraph with <strong>highlights</strong>.</p>
-</InfoBox>
-```
-
-#### Stat box
-```svelte
-<InfoBox type="stat" visible={showInfo.myKey} stats={[
-  { value: '3.9M', label: 'Population' },
-  { value: '47yrs', label: 'Since founding' },
-]} />
-```
-
-#### Bar chart
-```svelte
-<InfoBox
-  type="chart"
-  visible={showInfo.myKey}
-  chartTitle="My chart title"
-  chartData={[
-    { label: 'Category A', pct: 85, value: '85%' },
-    { label: 'Category B', pct: 60, value: '60%' },
-  ]}
-/>
-```
-
-### Changing the Map Style
-
-In `Map.svelte`, change the `style` option:
-
-```js
-// Free options (no API key):
-style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json'   // dark
-style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json'       // light
-style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json'        // colour
-
-// With Mapbox token (higher detail):
-style: 'mapbox://styles/mapbox/satellite-streets-v12'
-```
-
-### Adding / Removing POI Markers
-
-Edit the `pois` array in `Map.svelte`:
-
-```js
-const pois = [
-  {
-    id: 'myplace',
-    coords: [lon, lat],
-    label: 'Display Name',
-    steps: [2, 3],   // visible during these map steps
-  },
-  // …
-];
-```
-
-### Adding the Migration Route
-
-The dashed red line in `Map.svelte` is a GeoJSON LineString. Update the `coordinates` array to match your actual route.
+All data collection, analysis decisions, editorial framing, and interpretations are the author's own. The underlying dataset was assembled entirely from primary sources by the author. AI tools did not access, generate, or modify the raw data.
 
 ---
 
@@ -161,23 +114,13 @@ The dashed red line in `Map.svelte` is a GeoJSON LineString. Update the `coordin
 |---|---|
 | `svelte` | UI framework |
 | `vite` + `@sveltejs/vite-plugin-svelte` | Build tooling |
-| `maplibre-gl` | Free/open map rendering (WebGL) |
-| `svelte-scroller` | Scroll position tracking |
+| `maplibre-gl` | Map rendering (WebGL) |
+| `maptiler` | Satellite + hybrid map tiles |
 
-No API keys required — uses CARTO's free basemap tiles.
-
----
-
-## Tips for Production
-
-- **Replace placeholder text** with your actual reporting
-- **Add images** inside `.prose-block` with `<img>` tags
-- **Animate the route** using MapLibre's line-dasharray animation trick
-- **Add a progress bar** using the `progress` binding from `<Scroller>`
-- **Lazy-load the map** if embedding in a CMS
+**R packages:** `rvest`, `httr`, `tidyverse`, `tesseract`, `tidygeocoder`, `fs`
 
 ---
 
 ## Attribution
 
-Map tiles © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, rendered by [CARTO](https://carto.com). Built with [MapLibre GL JS](https://maplibre.org/) and [svelte-scroller](https://github.com/sveltejs/svelte-scroller).
+Map tiles © [MapTiler](https://www.maptiler.com) & [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors. Built with [MapLibre GL JS](https://maplibre.org/). Data source: [Algerian Ministry of National Defence](https://www.mdn.dz).
