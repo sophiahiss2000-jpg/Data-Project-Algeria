@@ -190,7 +190,7 @@
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.terrorism}">01 — Counter-Terrorism</span>
         <h2>In Guezzam — Eastern Sahara</h2>
-        <p>In Guezzam sits near Algeria's border with Libya, another source of instability. ANP reports from this region document both terrorism-related arrests and the seizure of weapons caches.</p>
+        <p>In Guezzam sits near Algeria's border with Niger and Libya, another source of instability. ANP reports from this region document both terrorism-related arrests and the seizure of weapons caches.</p>
       </div>
     </section>
 
