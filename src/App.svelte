@@ -266,11 +266,11 @@
       <div class="prose-block">
         <div class="info-text" class:visible={v(12)}>
           <span class="label">El Oued</span>
-          <p>El Oued appeared in <strong>18 separate report weeks</strong> — more than any other city in the dataset. The region's proximity to Tunisia makes it a key transit point, and ANP operations here consistently document large cannabis hauls alongside arrests of trafficking networks.</p>
+          <p>El Oued appeared in <strong>18 separate report weeks</strong> — more than any other city in the dataset. The region's proximity to Tunisia makes it a key transit point, and ANP operations here consistently document large cannabis hauls alongside seized vehicles — often 4x4 trucks adapted for desert crossings.</p>
         </div>
         <div class="report-image" class:visible={v(12)}>
-          <img src="{base}data/anp_output/images/2024-01-17/img_06.jpg" alt="ANP operational report — El Oued" loading="lazy" />
-          <p class="img-caption">ANP press image — El Oued region, January 2024</p>
+          <img src="{base}data\anp_output\images\2025-03-27\img_13.jpg" alt="ANP operational report — El Oued" loading="lazy" />
+          <p class="img-caption">Seized vehicles — El Oued region, March 2025</p>
         </div>
       </div>
     </section>
@@ -288,7 +288,7 @@
       <div class="prose-block">
         <div class="info-text" class:visible={v(14)}>
           <span class="label">Ouargla's Role</span>
-          <p>Ouargla's central position in the Algerian Sahara makes it a strategic interdiction point. ANP images from the region consistently show large quantities of packaged drugs alongside seized vehicles — often 4x4 trucks adapted for desert crossings.</p>
+          <p>Ouargla's central position in the Algerian Sahara makes it a strategic interdiction point. ANP images from the region consistently show images of packaged drugs.</p>
         </div>
         <div class="report-image" class:visible={v(14)}>
           <img src="{base}data/anp_output/images/2024-01-10/img_06.jpg" alt="ANP operational report — Ouargla" loading="lazy" />
@@ -313,8 +313,8 @@
           <p>The <strong>7,306 kg of cocaine</strong> seized over 22 months is notable. Cocaine has historically been rare in North Africa but is increasingly documented in Algerian military reports — likely transiting from West Africa via Saharan smuggling networks en route to European markets.</p>
         </div>
         <div class="report-image" class:visible={v(16)}>
-          <img src="{base}data/anp_output/images/2024-01-24/img_04.jpg" alt="ANP operational report — Tebessa" loading="lazy" />
-          <p class="img-caption">ANP press image — Tebessa region, January 2024</p>
+          <img src="{base}data/anp_output/images/2025-04-13/img_02.jpg" alt="ANP operational report — cocaine" loading="lazy" />
+          <p class="img-caption">66kg of Cocaine seized April 2025</p>
         </div>
       </div>
     </section>
@@ -325,6 +325,10 @@
         <div class="info-text" class:visible={v(17)}>
           <span class="label">58 Million Pills</span>
           <p>The most striking drug figure is the <strong>58 million psychotropic pills</strong> seized over the period. These tablets — primarily Tramadol and Captagon — are manufactured in Libya and Jordan and transit Algeria en route to West Africa and Europe. Their scale dwarfs the cocaine and cannabis figures and points to an industrial-scale trafficking operation.</p>
+        </div>
+        <div class="report-image" class:visible={v(17)}>
+          <img src="{base}data/anp_output/images/2024-10-30/img_06.jpg" alt="ANP operational report — psychotropic pills" loading="lazy" />
+          <p class="img-caption">14 967 psychotropic pills seized October 2024</p>
         </div>
       </div>
     </section>
@@ -477,8 +481,8 @@
           <p>The clustering of weapons seizures in the northeast — Batna, Khenchela, Constantine, Tebessa — points to a distinct regional dynamic compared to the south. These are not Saharan smuggling routes but denser, more urban networks operating in Algeria's most populated corridor.</p>
         </div>
         <div class="report-image" class:visible={v(30)}>
-          <img src="{base}data/anp_output/images/2024-03-06/img_05.jpg" alt="ANP operational report — Constantine" loading="lazy" />
-          <p class="img-caption">ANP press image — Constantine region, March 2024</p>
+          <img src="{base}data/anp_output/images/2025-02-27/img_01.jpg" alt="ANP operational report — Tebessa" loading="lazy" />
+          <p class="img-caption">Weapons seized in Tebessa, February 2025</p>
         </div>
       </div>
     </section>
@@ -513,7 +517,7 @@
   <div class="prose-block">
     <div class="info-text" class:visible={v(33)}>
       <span class="label">Expulsions</span>
-      <p>Human rights organisations including Human Rights Watch and the Mixed Migration Centre have documented systematic <strong>summary expulsions</strong> of migrants from Algeria into the desert — often without water, food or their belongings. The ANP reports document arrests but not what happens next.</p>
+      <p>Human rights organisations including Human Rights Watch and Amnesty International have documented systematic <strong>summary expulsions</strong> of migrants from Algeria into the desert — often without water, food or their belongings. The ANP reports document arrests but not what happens next.</p>
     </div>
     <div class="report-image" class:visible={v(33)}>
       <img src="{base}data/anp_output/images/ANP_1200_dossier2_119db663b9.jpg" alt="Alarm Phone Sahara — Tamanrasset/Assamaka" loading="lazy" />
@@ -572,7 +576,7 @@
 
         <div class="end-note">
           <p><strong>Data:</strong> Algerian Ministry of Defence operational reports, January 2024 – October 2025. Scraped and analysed by the author. Image geolocation via OCR + OpenStreetMap Nominatim.</p>
-          <p><strong>Methodology note:</strong> Aggregate statistics (arrests, seizures) are extracted from structured tables and are national totals — they cannot be attributed to individual cities. Location references in the article are derived from paragraph-level text analysis of 143 full report texts: a city name and theme keyword appearing in the same paragraph was used as a proxy for operational location. Totals should be treated as conservative minimums.</p>
+          <p><strong>Methodology note:</strong> Aggregate statistics (arrests, seizures) are extracted from structured tables and are national totals — they cannot be attributed to individual cities. Location references in the article are derived from paragraph-level text analysis of 143 full report texts: a city name and theme keyword appearing in the same paragraph was used as a proxy for operational location. Totals should be treated with caution and triangulated with other sources for inference.</p>
         </div>
       </div>
     </section>
