@@ -14,35 +14,35 @@
     { center: [2.6323, 28.0339], zoom: 4.0, pitch: 0,  bearing: 0   }, // 0 intro
     { center: [5.5228, 22.7851], zoom: 9,   pitch: 40, bearing: -10 }, // 1 terrorism: tamanrasset
     { center: [0.9503, 21.3298], zoom: 10,  pitch: 35, bearing: 5   }, // 2 terrorism: bordj
-    { center: [8.4799, 26.5042], zoom: 9,   pitch: 30, bearing: 10  }, // 3 terrorism: illizi
+    { center: [5.7693, 19.5662], zoom: 9, pitch: 40, bearing: 10 },    // 3 terrorism: In Guezzam
     { center: [2.6323, 28.0339], zoom: 4.5, pitch: 0,  bearing: 0   }, // 4 overview
     { center: [6.8607, 33.3612], zoom: 10,  pitch: 35, bearing: -5  }, // 5 drugs: el oued
     { center: [5.3218, 31.9445], zoom: 10,  pitch: 30, bearing: 10  }, // 6 drugs: ouargla
     { center: [8.1212, 35.4036], zoom: 10,  pitch: 35, bearing: -8  }, // 7 drugs: tebessa
     { center: [5.5228, 22.7851], zoom: 8,   pitch: 45, bearing: 15  }, // 8 gold: tamanrasset
     { center: [8.4799, 26.5042], zoom: 9,   pitch: 40, bearing: -5  }, // 9 gold: illizi
-    { center: [-1.3582, 26.4888], zoom: 9,  pitch: 35, bearing: 5   }, // 10 gold: adrar
+    { center: [9.4844, 24.5553], zoom: 9, pitch: 35, bearing: 5 },     // 10 gold: djanet
     { center: [6.1768, 35.5545], zoom: 11,  pitch: 40, bearing: -10 }, // 11 weapons: batna
     { center: [7.1457, 35.4302], zoom: 11,  pitch: 35, bearing: 8   }, // 12 weapons: khenchela
     { center: [6.6084, 36.3642], zoom: 10,  pitch: 30, bearing: -5  }, // 13 weapons: constantine
     { center: [2.6323, 24.0000], zoom: 5,   pitch: 0,  bearing: 0   }, // 14 migration overview
     { center: [5.5228, 22.7851], zoom: 8,   pitch: 40, bearing: 10  }, // 15 migration: tamanrasset
-    { center: [6.9077, 36.8801], zoom: 11,  pitch: 45, bearing: -10 }, // 16 migration: skikda
+    { center: [-0.6417, 35.6969], zoom: 11, pitch: 45, bearing: -10 }, // 16 migration: Oran
     { center: [7.7549, 36.8982], zoom: 11,  pitch: 40, bearing: 5   }, // 17 migration: annaba
   ];
 
   const pois = [
     { id: 'tamanrasset', coords: [5.5228, 22.7851],  label: 'Tamanrasset',          steps: [1,8,9,15] },
     { id: 'bordj',       coords: [0.9503, 21.3298],  label: 'Bordj Badji Mokhtar',  steps: [2] },
-    { id: 'illizi',      coords: [8.4799, 26.5042],  label: 'Illizi',               steps: [3,9,10] },
+    { id: 'In Guezzam',  coords: [5.7693, 19.5662],  label: 'In Guezzam',           steps: [3,9,10] },
     { id: 'eloued',      coords: [6.8607, 33.3612],  label: 'El Oued',              steps: [5] },
     { id: 'ouargla',     coords: [5.3218, 31.9445],  label: 'Ouargla',              steps: [6] },
     { id: 'tebessa',     coords: [8.1212, 35.4036],  label: 'Tebessa',              steps: [7] },
-    { id: 'adrar',       coords: [-1.3582, 26.4888], label: 'Adrar',                steps: [10] },
+    { id: 'djanet',      coords: [9.4844, 24.5553], label: 'Djanet',                steps: [10] },
     { id: 'batna',       coords: [6.1768, 35.5545],  label: 'Batna',                steps: [11] },
     { id: 'khenchela',   coords: [7.1457, 35.4302],  label: 'Khenchela',            steps: [12] },
     { id: 'constantine', coords: [6.6084, 36.3642],  label: 'Constantine',          steps: [13] },
-    { id: 'skikda',      coords: [6.9077, 36.8801],  label: 'Skikda',               steps: [16] },
+    { id: 'oran', coords: [-0.6417, 35.6969], label: 'Oran', steps: [16] },
     { id: 'annaba',      coords: [7.7549, 36.8982],  label: 'Annaba',               steps: [17] },
   ];
 

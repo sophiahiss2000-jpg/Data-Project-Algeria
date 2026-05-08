@@ -12,7 +12,7 @@
     0,          // 0  intro
     1, 1, 1,    // 1-3  terrorism: tamanrasset
     2, 2,       // 4-5  terrorism: bordj
-    3, 3,       // 6-7  terrorism: illizi
+    3, 3,       // 6-7  terrorism: In Guezzam
     4, 4,       // 8-9  terrorism overview/stats
     5, 5, 5,    // 10-12 drugs: el oued
     6, 6,       // 13-14 drugs: ouargla
@@ -26,7 +26,7 @@
     13, 13,     // 29-30 weapons: constantine
     14,         // 31   migration overview
     15, 15,     // 32-33 migration: tamanrasset inland
-    16, 16,     // 34-35 migration: skikda coast
+    16, 16,     // 34-35 migration: oran coast
     17, 17,     // 36-37 migration: annaba coast
   ];
 
@@ -48,7 +48,7 @@
     'Algeria',
     'Tamanrasset','Tamanrasset','Tamanrasset',
     'Bordj Badji Mokhtar','Bordj Badji Mokhtar',
-    'Illizi','Illizi',
+    'In Guezzam','In Guezzam',
     'Algeria','Algeria',
     'El Oued','El Oued','El Oued',
     'Ouargla','Ouargla',
@@ -56,13 +56,13 @@
     'Algeria',
     'Tamanrasset','Tamanrasset','Tamanrasset',
     'Illizi','Illizi',
-    'Adrar','Adrar',
+    'Djanet','Djanet',
     'Batna','Batna',
     'Khenchela','Khenchela',
     'Constantine','Constantine',
     'Algeria',
     'Tamanrasset','Tamanrasset',
-    'Skikda','Skikda',
+    'Oran','Oran',
     'Annaba','Annaba',
   ];
 
@@ -157,7 +157,7 @@
           <p>Tamanrasset, Algeria's southernmost major city, sits at the junction of trans-Saharan smuggling routes. ANP reports from this region frequently document the surrender of armed militants — many crossing from northern Mali where armed groups remain active.</p>
         </div>
         <div class="report-image" class:visible={v(3)}>
-          <img src="{base}data/anp_output/images/2024-02-07/img_01.jpg" alt="ANP operational report — Tamanrasset" loading="lazy" />
+          <img src="{base}data/anp_output/images/2024-02-14/img_01.jpg" alt="Armed security personnel inspecting seized weapons in a desert operations context near Tamanrasset during a counterterrorism report" loading="lazy" />
           <p class="img-caption">ANP press image — Tamanrasset region, February 2024</p>
         </div>
       </div>
@@ -178,27 +178,31 @@
           <span class="label">Algeria's Most Watched Bordertown</span>
           <p>The ANP reports describe surrenders of armed individuals at Bordj Badji Mokhtar with near-weekly regularity, often naming militants alongside their <em>nom de guerre</em>. This suggests the military is not just documenting anonymous arrests but tracking known figures — a pattern more consistent with an active intelligence operation than routine border policing. With northern Mali's armed groups still active across the border, this small town has become Algeria's primary interface with the Sahel's ongoing insurgency.</p>
         </div>
+        <div class="report-image" class:visible={v(5)}>
+          <img src="{base}data/anp_output/images/2024-06-12/img_01.jpg" alt="Military personnel and vehicles at a remote border location near Bordj Badji Mokhtar, conveying active counterterrorism surveillance in the Sahara" loading="lazy" />
+          <p class="img-caption">ANP press image — Bordj Badji Mokhtar region, June 2024</p>
+        </div>
       </div>
     </section>
 
-    <!-- Illizi -->
+    <!-- In Guezzam -->
     <section class="scroll-section" data-index="6">
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.terrorism}">01 — Counter-Terrorism</span>
-        <h2>Illizi — Eastern Sahara</h2>
-        <p>Illizi sits near Algeria's border with Libya, another source of instability. ANP reports from this region document both terrorism-related arrests and the seizure of weapons caches.</p>
+        <h2>In Guezzam — Eastern Sahara</h2>
+        <p>In Guezzam sits near Algeria's border with Libya, another source of instability. ANP reports from this region document both terrorism-related arrests and the seizure of weapons caches.</p>
       </div>
     </section>
 
     <section class="scroll-section info-section" data-index="7">
       <div class="prose-block">
         <div class="info-text" class:visible={v(7)}>
-          <span class="label">Illizi Region</span>
-          <p>The Illizi wilaya borders Libya to the east, a country where weapons have circulated widely since 2011. Operations here are documented less frequently than in the Mali-border zone but show a consistent pattern of arms interdiction.</p>
+          <span class="label">In Guezzam Region</span>
+          <p>The In Guezzam wilaya borders Libya to the east, a country where weapons have circulated widely since 2011. Operations here are documented less frequently than in the Mali-border zone but show a consistent pattern of arms interdiction.</p>
         </div>
         <div class="report-image" class:visible={v(7)}>
-          <img src="{base}data/anp_output/images/2024-01-10/img_11.jpg" alt="ANP operational report — Illizi" loading="lazy" />
-          <p class="img-caption">ANP press image — Illizi region, January 2024</p>
+          <img src="{base}data/anp_output/images/2024-07-10/img_01.jpg" alt="ANP capture of killed suspected militants" loading="lazy" />
+          <p class="img-caption">ANP press image — In Guezzam region, January 2024</p>
         </div>
       </div>
     </section>
@@ -363,8 +367,8 @@
           <p>The Tamanrasset region sits above some of Algeria's richest alluvial gold deposits. Tens of thousands of miners — the vast majority from Mali, Niger and other sub-Saharan countries — cross porous desert borders to reach them. The <strong>26,007 generators</strong> seized over 22 months gives a sense of the operation's industrial character: generators power the water pumps used to sluice gold from riverbeds, and seizing them is the ANP's primary strategy for disrupting sites rather than simply arresting individuals.</p>
         </div>
         <div class="report-image" class:visible={v(20)}>
-          <img src="{base}data/anp_output/images/2024-02-14/img_01.jpg" alt="ANP operational report — gold mining equipment" loading="lazy" />
-          <p class="img-caption">Seized gold mining equipment — Tamanrasset region, February 2024</p>
+          <img src="{base}data\anp_output\images\2025-10-22\img_07.jpg" alt="ANP operational report — gold mining equipment" loading="lazy" />
+          <p class="img-caption">Seized gold mining equipment — Tamanrasset region, October 2025</p>
         </div>
       </div>
     </section>
@@ -387,14 +391,14 @@
       </div>
     </section>
 
-    <!-- Gold: Adrar -->
-    <section class="scroll-section" data-index="23">
-      <div class="prose-block">
-        <span class="section-tag theme-tag" style="color:{themes.gold}">03 — Illegal Gold Mining</span>
-        <h2>Adrar — Western Sahara</h2>
-        <p>Adrar, in Algeria's far southwest, borders Mauritania and Mali. Though it appears less frequently in the data than Tamanrasset, a significant operation in September 2025 documented arrests and equipment seizures here.</p>
-      </div>
-    </section>
+  <!-- Gold: Djanet -->
+<section class="scroll-section" data-index="23">
+  <div class="prose-block">
+    <span class="section-tag theme-tag" style="color:{themes.gold}">03 — Illegal Gold Mining</span>
+    <h2>Djanet — Border Region Gold Fields</h2>
+    <p>Djanet, deep in Algeria's Tassili n'Ajjer region near the Libyan border, is another documented hub of illegal gold mining activity. Its remote location makes it difficult to police and easy to use as a staging point for miners crossing from Libya.</p>
+  </div>
+</section>
 
     <section class="scroll-section info-section" data-index="24">
       <div class="prose-block">
@@ -403,8 +407,8 @@
           <p>The ANP reports rarely describe the backgrounds of those arrested, referring to them only as "individuals" apprehended during illegal mining operations. But researchers working the Sahel gold economy have documented that most artisanal miners are economic migrants — men who have travelled thousands of kilometres from Mali, Guinea, Burkina Faso and Niger seeking the deposits that lie beneath Algeria's southern desert. At <strong>35,658 arrests in 22 months</strong>, the data suggests that for many, the risk of detention is a price worth paying.</p>
         </div>
         <div class="report-image" class:visible={v(24)}>
-          <img src="{base}data/anp_output/images/2025-09-10/img_02.jpg" alt="ANP operational report — Adrar" loading="lazy" />
-          <p class="img-caption">ANP press image — Adrar region, September 2025</p>
+          <img src="{base}data/anp_output/images/2024-04-09/img_11.jpg" alt="ANP operational report — Djanet" loading="lazy" />
+          <p class="img-caption">Gold miners arrested — Djanet region, April 2024</p>
         </div>
       </div>
     </section>
@@ -505,30 +509,27 @@
       </div>
     </section>
 
-    <section class="scroll-section info-section" data-index="33">
-      <div class="prose-block">
-        <div class="info-text" class:visible={v(33)}>
-          <span class="label">Expulsions</span>
-          <p>Human rights organisations including Human Rights Watch and the Mixed Migration Centre have documented systematic <strong>summary expulsions</strong> of migrants from Algeria into the desert — often without water, food or their belongings. The ANP reports document arrests but not what happens next. Images from this section courtesy of Alarm Phone Sahara where available.</p>
-        </div>
-        <div class="placeholder-image" class:visible={v(33)}>
-          <div class="img-placeholder">
-            <span>📷</span>
-            <p>Add image from Alarm Phone Sahara here</p>
-            <p class="placeholder-note">Replace with: <code>/data/your-image.jpg</code></p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="scroll-section info-section" data-index="33">
+  <div class="prose-block">
+    <div class="info-text" class:visible={v(33)}>
+      <span class="label">Expulsions</span>
+      <p>Human rights organisations including Human Rights Watch and the Mixed Migration Centre have documented systematic <strong>summary expulsions</strong> of migrants from Algeria into the desert — often without water, food or their belongings. The ANP reports document arrests but not what happens next.</p>
+    </div>
+    <div class="report-image" class:visible={v(33)}>
+      <img src="{base}data/anp_output/images/ANP_1200_dossier2_119db663b9.jpg" alt="Alarm Phone Sahara — Tamanrasset/Assamaka" loading="lazy" />
+      <p class="img-caption">Alarm Phone Sahara — Migrants expelled from Tamanrasset to Assamaka, Niger</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Migration: Skikda coast -->
-    <section class="scroll-section" data-index="34">
-      <div class="prose-block">
-        <span class="section-tag theme-tag" style="color:{themes.migration}">05 — Irregular Migration</span>
-        <h2>Skikda — The Mediterranean</h2>
-        <p>On Algeria's northeast coast, Skikda is one of several ports documented in the ANP reports for sea interceptions. Migrants — many of whom have transited the Sahara — attempt the crossing to Italy or Spain on small wooden or rubber boats.</p>
-      </div>
-    </section>
+<!-- Migration: Oran coast -->
+<section class="scroll-section" data-index="34">
+  <div class="prose-block">
+    <span class="section-tag theme-tag" style="color:{themes.migration}">05 — Irregular Migration</span>
+    <h2>Oran — Gateway to Spain</h2>
+    <p>On Algeria's northwest Mediterranean coast, Oran is one of the country's major departure points for migrants attempting the crossing to Spain. The city's proximity to the Spanish coast — roughly 200km to Almería — makes it a key node on the western Mediterranean route.</p>
+  </div>
+</section>
 
     <section class="scroll-section info-section" data-index="35">
       <div class="prose-block">
@@ -543,8 +544,8 @@
           </div>
         </div>
         <div class="report-image" class:visible={v(35)}>
-          <img src="{base}data/anp_output/images/2024-01-10/img_13.jpg" alt="ANP operational report — Skikda" loading="lazy" />
-          <p class="img-caption">ANP press image — Skikda region, January 2024</p>
+          <img src="{base}data/anp_output/images/2024-02-28/img_12.jpg" alt="ANP operational report — Oran" loading="lazy" />
+          <p class="img-caption">Interception of Migrants— Oran region, February 2024</p>
         </div>
       </div>
     </section>
