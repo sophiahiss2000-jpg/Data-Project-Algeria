@@ -51,3 +51,111 @@ cat("Avg length:", mean(nchar(df$full_text), na.rm = TRUE) |> round(), "chars\n"
 
 write_csv(df, "public/data/anp_output/anp_clean.csv")
 cat("Saved.\n")
+
+
+## Location - Operation correlation 
+
+locations <- c(
+  "تمنراست"       = "Tamanrasset",
+  "برج باجي مختار" = "Bordj Badji Mokhtar",
+  "إن صالح"       = "In Salah",
+  "إن ڤزام"       = "In Guezzam",    # ڤ statt ق
+  "إن قزام"       = "In Guezzam",    # beide Varianten
+  "إليزي"         = "Illizi",
+  "الوادي"        = "El Oued",
+  "ورقلة"         = "Ouargla",
+  "تبسة"          = "Tebessa",
+  "باتنة"         = "Batna",
+  "خنشلة"         = "Khenchela",
+  "قسنطينة"       = "Constantine",
+  "عنابة"         = "Annaba",
+  "سكيكدة"        = "Skikda",
+  "أدرار"         = "Adrar",
+  "غرداية"        = "Ghardaia",
+  "الأغواط"       = "Laghouat",
+  "تقرت"          = "Touggourt",
+  "بسكرة"         = "Biskra",
+  "سطيف"          = "Setif",
+  "بجاية"         = "Bejaia"
+)
+
+themes <- list(
+  terrorism = c("إرهاب", "إرهابي", "تسليم", "كلاشنيكوف", "مجموعة مسلحة", "الإرهابيين"),
+  drugs     = c("مخدرات", "كيف", "كوكايين", "أقراص مهلوسة", "مهرب", "تهريب.*مخدر"),
+  gold      = c("ذهب", "تنقيب", "مولد", "مطرقة", "أورباي", "التنقيب غير المشروع",
+                "مولدا كهربائيا", "خام الذهب"),
+  weapons   = c("أسلحة نارية", "بندقية", "مسدس", "ذخيرة", "رشاشة"),
+  migration = c("مهاجر", "هجرة غير شرعية", "قوارب", "جنسيات مختلفة")
+)
+
+
+results2 <- df |>
+  select(date, full_text) |>
+  filter(!is.na(full_text)) |>
+  rowwise() |>
+  mutate(
+    locs_found   = list(names(locations)[str_detect(full_text, names(locations))]),
+    themes_found = list(names(themes)[map_lgl(themes, ~any(str_detect(full_text, .x)))])
+  ) |>
+  filter(length(locs_found) > 0, length(themes_found) > 0) |>
+  unnest(locs_found) |>
+  unnest(themes_found) |>
+  mutate(location_en = locations[locs_found]) |>
+  select(date, location_ar = locs_found, location_en, theme = themes_found)
+
+results2 |>
+  count(location_en, theme, sort = TRUE) |>
+  print(n = 100)
+
+# Satzbasiertes Matching
+results3 <- df |>
+  select(date, full_text) |>
+  filter(!is.na(full_text)) |>
+  rowwise() |>
+  mutate(
+    sentences = list(str_split(full_text, "[\\.،\n]")[[1]] |> 
+                       str_trim() |> 
+                       (\(x) x[nchar(x) > 10])())
+  ) |>
+  unnest(sentences) |>
+  rowwise() |>
+  mutate(
+    locs_found   = list(names(locations)[str_detect(sentences, names(locations))]),
+    themes_found = list(names(themes)[map_lgl(themes, ~any(str_detect(sentences, .x)))])
+  ) |>
+  filter(length(locs_found) > 0, length(themes_found) > 0) |>
+  unnest(locs_found) |>
+  unnest(themes_found) |>
+  mutate(location_en = locations[locs_found]) |>
+  select(date, location_ar = locs_found, location_en, theme = themes_found)
+
+results3 |>
+  count(location_en, theme, sort = TRUE) |>
+  print(n = 100)
+
+## statt Sätzen, Absätze als Einheit nehmen, da arbaische Sätze immer sehr lang
+results4 <- df |>
+  select(date, full_text) |>
+  filter(!is.na(full_text)) |>
+  rowwise() |>
+  mutate(
+    paragraphs = list(str_split(full_text, "\n")[[1]] |> 
+                        str_trim() |> 
+                        (\(x) x[nchar(x) > 20])())
+  ) |>
+  unnest(paragraphs) |>
+  rowwise() |>
+  mutate(
+    locs_found   = list(names(locations)[str_detect(paragraphs, names(locations))]),
+    themes_found = list(names(themes)[map_lgl(themes, ~any(str_detect(paragraphs, .x)))])
+  ) |>
+  filter(length(locs_found) > 0, length(themes_found) > 0) |>
+  unnest(locs_found) |>
+  unnest(themes_found) |>
+  mutate(location_en = locations[locs_found]) |>
+  select(date, location_ar = locs_found, location_en, theme = themes_found)
+
+results4 |>
+  count(location_en, theme, sort = TRUE) |>
+  print(n = 100)
+

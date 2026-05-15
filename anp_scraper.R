@@ -683,31 +683,9 @@ themes <- list(
   migration = c("مهاجر", "هجرة", "قارب", "غير شرعي")
 )
 
-results <- df_clean |>
-  select(date, raw_text_snippet) |>
-  filter(!is.na(raw_text_snippet)) |>
-  rowwise() |>
-  mutate(
-    locs_found   = list(names(locations)[str_detect(raw_text_snippet, names(locations))]),
-    themes_found = list(names(themes)[map_lgl(themes, ~any(str_detect(raw_text_snippet, .x)))])
-  ) |>
-  filter(length(locs_found) > 0, length(themes_found) > 0) |>
-  unnest(locs_found) |>
-  unnest(themes_found) |>
-  mutate(location_en = locations[locs_found]) |>
-  select(date, location_ar = locs_found, location_en, theme = themes_found)
+df_locations <- read_csv("public/data/anp_output/anp_image_locations.csv",
+                         col_types = cols(date = col_character()))
 
-results |>
-  count(location_en, theme, sort = TRUE) |>
-  print(n = 200)
-
-summary_df <- results |>
-  count(location_en, theme, sort = TRUE)
-
-print(summary_df, n = 40)
-
-write_csv(results, "public/data/anp_output/anp_location_themes.csv")
-write_csv(summary_df, "public/data/anp_output/anp_location_themes_summary.csv")
-cat("Saved.\n")
+View(df_locations)
 
 

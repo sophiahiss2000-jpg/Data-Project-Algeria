@@ -15,7 +15,7 @@
     3, 3,       // 6-7  terrorism: In Guezzam
     4, 4,       // 8-9  terrorism overview/stats
     5, 5, 5,    // 10-12 drugs: el oued
-    6, 6,       // 13-14 drugs: ouargla
+    6, 6,       // 13-14 drugs: Oran
     7, 7,       // 15-16 drugs: tebessa
     4,          // 17   drugs summary
     8, 8, 8,    // 18-20 gold: tamanrasset
@@ -51,7 +51,7 @@
     'In Guezzam','In Guezzam',
     'Algeria','Algeria',
     'El Oued','El Oued','El Oued',
-    'Ouargla','Ouargla',
+    'Oran', 'Oran',
     'Tebessa','Tebessa',
     'Algeria',
     'Tamanrasset','Tamanrasset','Tamanrasset',
@@ -116,7 +116,9 @@
         <span class="section-tag">Introduction</span>
         <h2>Africa's Largest Country</h2>
         <p>Algeria shares borders with seven countries across the Sahara and Mediterranean. Its military — the Armée Nationale Populaire (ANP) — publishes weekly operational reports detailing arrests and seizures across five categories: terrorism, drugs, illegal gold mining, weapons and irregular migration.</p>
-        <p>This analysis is based on <strong>143 weekly reports</strong> published between January 2024 and October 2025, scraped directly from the Algerian Ministry of Defence website.</p>
+        <p>This analysis is based on <strong>143 weekly reports</strong> published between January 2024 and October 2025, scraped and geotagged directly from the Algerian Ministry of Defence website.</p>
+        <p>The army and secret service possess considerable decision-making power and executive authority in Algeria, but usually data on the "black box Algeria" is largely unacessible.</p>
+        <p>These reports therefore offer an unusual glimpse into how the Algerian state documents and communicates its security operations.</p>
       </div>
     </section>
 
@@ -127,7 +129,7 @@
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color: {themes.terrorism}">01 — Counter-Terrorism</span>
         <h2>The Saharan Front</h2>
-        <p>Algeria's deep south remains the primary theatre of counter-terrorism operations. The 6th Military Region — headquartered in Tamanrasset — covers a territory larger than Western Europe and shares porous borders with Mali, Niger and Libya.</p>
+        <p>Algeria's deep south remains the primary theatre of counter-terrorism operations. The 6th Military Region — covering the counties or <em>wilayas</em> of Bordj Baji Mokhta, Tamanrasset, In Salah and In Guezzam  — covers a territory larger than Western Europe and shares porous borders with Mali, Niger and Libya.</p>
       </div>
     </section>
 
@@ -167,17 +169,18 @@
     <section class="scroll-section" data-index="4">
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.terrorism}">01 — Counter-Terrorism</span>
-        <h2>One Town. One Third of All Reports.</h2>
-        <p>Of all the towns in Algeria's vast southern interior, one name stands out with striking consistency: Bordj Badji Mokhtar, a remote outpost a few kilometres from the Malian border. A text analysis of all 143 weekly reports found it mentioned in a counter-terrorism context in <strong>33 separate reports</strong> — more than twice the frequency of any other city.</p>
+        <h2>One Wilaya. One Third of All Reports.</h2>
+        <p>Of all the wilayas in Algeria's vast southern interior, one name stands out with striking consistency: Bordj Badji Mokhtar, a few kilometres from the Malian border. A text analysis of all 143 weekly reports found it mentioned in a counter-terrorism contextin <strong>33 separate reports</strong> — more than twice the frequency of any other wilaya.</p>
       </div>
     </section>
 
     <section class="scroll-section info-section" data-index="5">
       <div class="prose-block">
-        <div class="info-text" class:visible={v(5)}>
-          <span class="label">Algeria's Most Watched Bordertown</span>
-          <p>The ANP reports describe surrenders of armed individuals at Bordj Badji Mokhtar with near-weekly regularity, often naming militants alongside their <em>nom de guerre</em>. This suggests the military is not just documenting anonymous arrests but tracking known figures — a pattern more consistent with an active intelligence operation than routine border policing. With northern Mali's armed groups still active across the border, this small town has become Algeria's primary interface with the Sahel's ongoing insurgency.</p>
-        </div>
+    <div class="info-text" class:visible={v(5)}>
+      <span class="label">Algeria's Terrorism Trauma</span>
+      <p>The ANP reports describe surrenders of armed individuals at Bordj Badji Mokhtar with near-weekly regularity, often naming militants alongside their <em>nom de guerre</em>.</p>
+      <p>These reports must be understood in the context of Algeria's enduring security doctrine, deeply shaped by the trauma of the <a href="https://www.monde-diplomatique.fr/2017/08/DAUM/57773" target="_blank">Black Decade</a> or <em>Décennie Noire</em> (1992–2002), a civil war that continues to structure state narratives around stability, terrorism and national survival.</p>
+    </div>  
         <div class="report-image" class:visible={v(5)}>
           <img src="{base}data/anp_output/images/2024-06-12/img_01.jpg" alt="Military personnel and vehicles at a remote border location near Bordj Badji Mokhtar, conveying active counterterrorism surveillance in the Sahara" loading="lazy" />
           <p class="img-caption">ANP press image — Bordj Badji Mokhtar region, June 2024</p>
@@ -190,15 +193,15 @@
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.terrorism}">01 — Counter-Terrorism</span>
         <h2>In Guezzam — Eastern Sahara</h2>
-        <p>In Guezzam sits near Algeria's border with Niger and Libya, another source of instability. ANP reports from this region document both terrorism-related arrests and the seizure of weapons caches.</p>
+        <p>In Guezzam sits near Algeria's border with Niger and Libya, another source of instability. Especially after the Fall of Muammar Gadaffi in Libya in 2012. ANP reports from this region document both terrorism-related arrests and the seizure of weapons caches.</p>
       </div>
     </section>
 
     <section class="scroll-section info-section" data-index="7">
       <div class="prose-block">
         <div class="info-text" class:visible={v(7)}>
-          <span class="label">In Guezzam Region</span>
-          <p>The In Guezzam wilaya borders Libya to the east, a country where weapons have circulated widely since 2011. Operations here are documented less frequently than in the Mali-border zone but show a consistent pattern of arms interdiction.</p>
+          <span class="label">In Guezzam</span>
+          <p><p>The military’s communication strategy surrounding these operations is often explicitly deterrent. Official reports regularly publish graphic and sometimes unblurred images of dead bodies, weapons and captured equipment — visual performances of force. In a country where the memory of the civil war remains deeply embedded in public consciousness, these images reinforce a long-standing regime narrative: that the military alone stands between Algeria and a return to chaos. The reporting therefore serves to reproduce the state’s self-presentation as the sole guarantor of order, stability and protection against Islamism and terrorism.</p>
         </div>
         <div class="report-image" class:visible={v(7)}>
           <img src="{base}data/anp_output/images/2024-07-10/img_01.jpg" alt="ANP capture of killed suspected militants" loading="lazy" />
@@ -212,7 +215,7 @@
       <div class="prose-block">
         <div class="info-text" class:visible={v(8)}>
           <span class="label">Counter-Terrorism in Context</span>
-          <p>Algeria has not experienced a major terrorist attack since the 2013 In Amenas hostage crisis. Yet the weekly cadence of surrenders, arrests and arms seizures documented in these reports tells a story of sustained low-level conflict. The <strong>1,158 support network arrests</strong> over 22 months — roughly 53 per month — suggests a logistics and financing infrastructure that is being systematically dismantled, week by week, in the Saharan interior.</p>
+          <p>While domestic insurgency largely declined after the mid-2000s, terrorism increasingly came to be framed as an external and transnational threat emanating from the Sahel, allowing irregular migration, smuggling and border mobility to be incorporated into a broader security continuum. In this sense, the reports reveal less about the objective scale of militant activity than about how the Algerian state continues to narrate insecurity and justify exceptional security governance.</p>
         </div>
       </div>
     </section>
@@ -226,20 +229,20 @@
           </div>
           <div class="stat-item">
             <span class="stat-value" style="color:{themes.terrorism}">~53</span>
-            <span class="stat-label">Arrests per month (support networks)</span>
+            <span class="stat-label"> Terrorism-related arrests per month</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
+<!-- ═══════════════════════════════════════════
          SECTION 2 — DRUGS
-    ════════════════════════════════════════════ -->
+════════════════════════════════════════════ -->
     <section class="scroll-section" data-index="10">
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.drugs}">02 — Drug Interdiction</span>
         <h2>El Oued — The Cannabis Highway</h2>
-        <p>El Oued, in Algeria's northeast near the Tunisian border, appears more frequently in ANP drug reports than any other city. It sits at the end of trans-Saharan cannabis routes originating in Morocco's Rif mountains.</p>
+        <p>El Oued, in Algeria's northeast near the Tunisian border, appears more frequently in ANP drug reports than any other city. It sits at the end of trans-Saharan <em>cannabis routes</em> originating in Morocco's Rif mountains — and has become a key node in a narcotics economy that now stretches from South America to suburban European markets.</p>
       </div>
     </section>
 
@@ -266,33 +269,33 @@
       <div class="prose-block">
         <div class="info-text" class:visible={v(12)}>
           <span class="label">El Oued</span>
-          <p>El Oued appeared in <strong>18 separate report weeks</strong> — more than any other city in the dataset. The region's proximity to Tunisia makes it a key transit point, and ANP operations here consistently document large cannabis hauls alongside seized vehicles — often 4x4 trucks adapted for desert crossings.</p>
+          <p>El Oued appeared in <strong>18 separate report weeks</strong> — more than any other city in the dataset. The region's proximity to Tunisia makes it a critical transit point: cannabis pressed in Morocco's Rif mountains travels east through Algeria before crossing into Tunisia and onward to Europe. ANP operations here consistently document large hauls alongside seized 4x4 trucks adapted for desert crossings.</p>
         </div>
         <div class="report-image" class:visible={v(12)}>
-          <img src="{base}data\anp_output\images\2025-03-27\img_13.jpg" alt="ANP operational report — El Oued" loading="lazy" />
+          <img src="{base}data/anp_output/images/2025-03-27/img_13.jpg" alt="ANP operational report — El Oued" loading="lazy" />
           <p class="img-caption">Seized vehicles — El Oued region, March 2025</p>
         </div>
       </div>
     </section>
 
-    <!-- Ouargla -->
+    <!-- Oran -->
     <section class="scroll-section" data-index="13">
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.drugs}">02 — Drug Interdiction</span>
-        <h2>Ouargla — The Desert Crossroads</h2>
-        <p>Ouargla, capital of Algeria's largest wilaya, sits at the junction of north-south and east-west Saharan routes. It is a hub not just for drugs but for multiple forms of contraband — and appears in reports across all five categories.</p>
+        <h2>The Golden Arc</h2>
+        <p>Algeria was long absent from cocaine trafficking maps. That changed in 2018, when 701kg of cocaine were seized at the port of Oran — hidden in a frozen meat container that had travelled from Brazil via Spain. The scandal, known as <em>cocaine-gate</em>, exposed a route that analysts at the Institute for Security Studies <a href="https://enactafrica.org/enact-observer/la-saisie-algerienne-de-cocaine-revele-des-tendances-alarmantes" target="_blank">described</a> as a <strong>"golden arc"</strong>: the North African coastline from Casablanca through Oran to Algiers — just 200km from Spain, woven into existing cannabis networks, and increasingly exploited by South American cartels.</p>
       </div>
     </section>
 
     <section class="scroll-section info-section" data-index="14">
       <div class="prose-block">
         <div class="info-text" class:visible={v(14)}>
-          <span class="label">Ouargla's Role</span>
-          <p>Ouargla's central position in the Algerian Sahara makes it a strategic interdiction point. ANP images from the region consistently show images of packaged drugs.</p>
+          <span class="label">Oran — The Golden Arc</span>
+          <p>Oran sits at the junction of north-south and east-west Saharan routes — a crossroads for virtually every form of contraband moving through Algeria's interior. ANP images from the region show packaged drugs alongside seized vehicles. Experts estimate that seizures represent only around 10% of actual trafficking volumes, suggesting that what the military intercepts is the visible fraction of a much larger flow.</p>
         </div>
         <div class="report-image" class:visible={v(14)}>
-          <img src="{base}data/anp_output/images/2024-01-10/img_06.jpg" alt="ANP operational report — Ouargla" loading="lazy" />
-          <p class="img-caption">ANP press image — Ouargla region, January 2024</p>
+          <img src="{base}data/anp_output/images/2024-12-04/img_02.jpg" alt="ANP operational report — Oran" loading="lazy" />
+          <p class="img-caption">A wall of packed drugs seized in Oran, December 2024</p>
         </div>
       </div>
     </section>
@@ -302,19 +305,19 @@
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.drugs}">02 — Drug Interdiction</span>
         <h2>Tebessa — The Tunisian Border</h2>
-        <p>Tebessa, in Algeria's far northeast, borders Tunisia — a country that has become an increasingly important transit point for narcotics entering Europe. ANP operations here document both cannabis and cocaine seizures.</p>
+        <p>Tebessa, in Algeria's far northeast, sits on the Tunisian border — a corridor that has become an increasingly active transit zone for narcotics moving toward European markets. The route from Brazil to Spain to Algeria, first documented in the Oran cocaine-gate case, has established infrastructure that extends across the country's northeastern corridor.</p>
       </div>
     </section>
 
     <section class="scroll-section info-section" data-index="16">
       <div class="prose-block">
         <div class="info-text" class:visible={v(16)}>
-          <span class="label">Cocaine — A New Pattern</span>
-          <p>The <strong>7,306 kg of cocaine</strong> seized over 22 months is notable. Cocaine has historically been rare in North Africa but is increasingly documented in Algerian military reports — likely transiting from West Africa via Saharan smuggling networks en route to European markets.</p>
+          <span class="label">Cocaine — A New Geography</span>
+          <p>The <strong>7,306 kg of cocaine</strong> seized over 22 months reflects an established pattern, not an anomaly. The 2018 Oran seizure revealed that South American cartels had already secured the route — testing it with small shipments before scaling up. The well-established ties between those cartels and Moroccan cannabis traffickers, who in turn have deep networks across northwestern Algeria, made the country a natural extension of existing supply chains. Seizures, analysts caution, represent only a fraction of what moves through.</p>
         </div>
         <div class="report-image" class:visible={v(16)}>
-          <img src="{base}data/anp_output/images/2025-04-13/img_02.jpg" alt="ANP operational report — cocaine" loading="lazy" />
-          <p class="img-caption">66kg of Cocaine seized April 2025</p>
+          <img src="{base}data/anp_output/images/2025-04-13/img_02.jpg" alt="ANP operational report — cocaine seizure" loading="lazy" />
+          <p class="img-caption">66 kg of cocaine seized — April 2025</p>
         </div>
       </div>
     </section>
@@ -324,15 +327,14 @@
       <div class="prose-block">
         <div class="info-text" class:visible={v(17)}>
           <span class="label">58 Million Pills</span>
-          <p>The most striking drug figure is the <strong>58 million psychotropic pills</strong> seized over the period. These tablets — primarily Tramadol and Captagon — are manufactured in Libya and Jordan and transit Algeria en route to West Africa and Europe. Their scale dwarfs the cocaine and cannabis figures and points to an industrial-scale trafficking operation.</p>
+          <p>The most striking drug figure is the <strong>58 million psychotropic pills</strong> seized over the period — primarily Tramadol and Captagon, manufactured in Libya and Jordan and transiting Algeria en route to West Africa and Europe. Unlike cocaine, which moves through port infrastructure along the northern coast, psychotropic pills travel overland through the Sahara. Their scale dwarfs the cocaine and cannabis figures entirely — and suggests that for every tablet intercepted, many more reach their destination.</p>
         </div>
         <div class="report-image" class:visible={v(17)}>
           <img src="{base}data/anp_output/images/2024-10-30/img_06.jpg" alt="ANP operational report — psychotropic pills" loading="lazy" />
-          <p class="img-caption">14 967 psychotropic pills seized October 2024</p>
+          <p class="img-caption">14,967 psychotropic pills seized — October 2024</p>
         </div>
       </div>
     </section>
-
     <!-- ═══════════════════════════════════════════
          SECTION 3 — GOLD MINING
     ════════════════════════════════════════════ -->
@@ -341,7 +343,7 @@
         <span class="section-tag theme-tag" style="color:{themes.gold}">03 — Illegal Gold Mining</span>
         <h2>1,600 Arrests a Month</h2>
         <p>Nothing in the ANP data is more startling in scale than the illegal gold mining figures. Between January 2024 and October 2025, Algerian military units arrested <strong>35,658 people</strong> for illegal artisanal mining — <em>orpaillage</em> — in the country's deep south. That is roughly 1,600 arrests every single month, dwarfing every other category by a factor of more than twenty.</p>
-        <p>Every gold-related paragraph in the 143 reports names the same four locations: Tamanrasset, Bordj Badji Mokhtar, Illizi and In Guezzam — a corridor running along Algeria's southern border from Mali to Libya.</p>
+        <p>Every gold-related paragraph in the 143 reports names the same four locations: Tamanrasset, Bordj Badji Mokhtar, Illizi and In Guezzam — a corridor running along Algeria's southern border from Mauritania, Mali and Niger to Libya.</p>
       </div>
     </section>
 
@@ -365,57 +367,57 @@
     </section>
 
     <section class="scroll-section info-section" data-index="20">
-      <div class="prose-block">
-        <div class="info-text" class:visible={v(20)}>
-          <span class="label">Tamanrasset — Where the Gold Rush Begins</span>
-          <p>The Tamanrasset region sits above some of Algeria's richest alluvial gold deposits. Tens of thousands of miners — the vast majority from Mali, Niger and other sub-Saharan countries — cross porous desert borders to reach them. The <strong>26,007 generators</strong> seized over 22 months gives a sense of the operation's industrial character: generators power the water pumps used to sluice gold from riverbeds, and seizing them is the ANP's primary strategy for disrupting sites rather than simply arresting individuals.</p>
-        </div>
-        <div class="report-image" class:visible={v(20)}>
-          <img src="{base}data\anp_output\images\2025-10-22\img_07.jpg" alt="ANP operational report — gold mining equipment" loading="lazy" />
-          <p class="img-caption">Seized gold mining equipment — Tamanrasset region, October 2025</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gold: Illizi -->
-    <section class="scroll-section" data-index="21">
-      <div class="prose-block">
-        <span class="section-tag theme-tag" style="color:{themes.gold}">03 — Illegal Gold Mining</span>
-        <h2>Illizi — Eastern Gold Fields</h2>
-        <p>Illizi's remote terrain also harbours significant gold deposits. Operations here are complicated by the region's proximity to Libya and the presence of armed groups who sometimes control mining sites as a revenue stream.</p>
-      </div>
-    </section>
-
-    <section class="scroll-section info-section" data-index="22">
-      <div class="prose-block">
-        <div class="info-text" class:visible={v(22)}>
-          <span class="label">Mining as a Conflict Economy</span>
-          <p>Researchers at the Global Initiative Against Transnational Organized Crime have documented how illegal gold mining in the Sahel has become intertwined with armed group finances. The ANP's focus on seizing equipment — generators, pressure hammers, metal detectors — rather than just arresting individuals suggests a strategy of disrupting the mining infrastructure itself.</p>
-        </div>
-      </div>
-    </section>
-
-  <!-- Gold: Djanet -->
-<section class="scroll-section" data-index="23">
   <div class="prose-block">
-    <span class="section-tag theme-tag" style="color:{themes.gold}">03 — Illegal Gold Mining</span>
-    <h2>Djanet — Border Region Gold Fields</h2>
-    <p>Djanet, deep in Algeria's Tassili n'Ajjer region near the Libyan border, is another documented hub of illegal gold mining activity. Its remote location makes it difficult to police and easy to use as a staging point for miners crossing from Libya.</p>
+    <div class="info-text" class:visible={v(20)}>
+      <span class="label">Tamanrasset — Where the Gold Rush Begins</span>
+      <p>The mining sites cluster around Abalassa, Arboua and Tin Zahouten — settlements west of Tamanrasset where artisanal pits press against the edges of residential areas. Satellite analysis by <a href="https://humanglemedia.com/an-illicit-gold-economy-is-pushing-desperate-nigerians-into-southern-algeria/" target="_blank">HumAngle</a> shows excavation sites less than five kilometres from town centres, with informal access roads connecting mines to settlements that increasingly function as logistical hubs for extraction operations. The <strong>26,007 generators</strong> seized over 22 months reflects the industrial scale: generators power the pumps used to sluice gold from riverbeds, and dismantling them is the ANP's primary strategy for disrupting sites.</p>
+    </div>
+    <div class="report-image" class:visible={v(20)}>
+      <img src="{base}data/anp_output/images/2025-10-22/img_07.jpg" alt="ANP operational report — gold mining equipment" loading="lazy" />
+      <p class="img-caption">Seized gold mining equipment — Tamanrasset region, October 2025</p>
+    </div>
   </div>
 </section>
 
-    <section class="scroll-section info-section" data-index="24">
-      <div class="prose-block">
-        <div class="info-text" class:visible={v(24)}>
-          <span class="label">Who Are the Miners?</span>
-          <p>The ANP reports rarely describe the backgrounds of those arrested, referring to them only as "individuals" apprehended during illegal mining operations. But researchers working the Sahel gold economy have documented that most artisanal miners are economic migrants — men who have travelled thousands of kilometres from Mali, Guinea, Burkina Faso and Niger seeking the deposits that lie beneath Algeria's southern desert. At <strong>35,658 arrests in 22 months</strong>, the data suggests that for many, the risk of detention is a price worth paying.</p>
-        </div>
-        <div class="report-image" class:visible={v(24)}>
-          <img src="{base}data/anp_output/images/2024-04-09/img_11.jpg" alt="ANP operational report — Djanet" loading="lazy" />
-          <p class="img-caption">Gold miners arrested — Djanet region, April 2024</p>
-        </div>
-      </div>
-    </section>
+<!-- Gold: Illizi -->
+<section class="scroll-section" data-index="21">
+  <div class="prose-block">
+    <span class="section-tag theme-tag" style="color:{themes.gold}">03 — Illegal Gold Mining</span>
+    <h2>Illizi — Eastern Gold Fields</h2>
+    <p>Illizi's remote terrain harbours significant gold deposits close to the Libyan border. Mining sites here operate within the same armed-group economy documented further west — where ownership of extraction sites, recruitment of fighters, and cross-border smuggling are not separate activities but aspects of a single integrated war economy.</p>
+  </div>
+</section>
+
+<section class="scroll-section info-section" data-index="22">
+  <div class="prose-block">
+    <div class="info-text" class:visible={v(22)}>
+      <span class="label">Gold Pays for Guns</span>
+  <p>The mining fields are not simply illegal — they are controlled. Armed Arab and Tuareg groups own the sites, recruit labourers through agents, and pay workers one-third of proceeds after weeks of labour. Theft is punished by amputation or death. Alongside mining, the same networks recruit fighters — offering close to ₦1 million per operation, sums that dwarf anything available legally. According to <a href="https://humanglemedia.com/an-illicit-gold-economy-is-pushing-desperate-nigerians-into-southern-algeria/" target="_blank">HumAngle's</a> reporting, some groups have fought ISWAP, Ansaru, rival factions, and Wagner mercenaries along the Mali border.</p>
+  <p>The <a href="https://www.unodc.org/documents/data-and-analysis/tocta_sahel/TOCTA_Sahel_Gold_v5.pdf" target="_blank">UNODC</a> estimates the Sahel produced 228 tons of gold in 2021, worth over $12.6 billion — much of it taxed or controlled by non-state armed groups.</p>    </div>
+  </div>
+</section>
+
+<!-- Gold: Djanet -->
+<section class="scroll-section" data-index="23">
+  <div class="prose-block">
+    <span class="section-tag theme-tag" style="color:{themes.gold}">03 — Illegal Gold Mining</span>
+    <h2>Djanet — The Libyan Border</h2>
+    <p>Djanet, in Algeria's Tassili n'Ajjer region near Libya, sits at the eastern end of the gold corridor. Its remoteness makes it difficult to police and easy to use as a staging point for miners and smugglers crossing from Libya — where weapons have circulated freely since 2011 and where gold smuggling networks feed into the same transnational economy.</p>
+  </div>
+</section>
+
+<section class="scroll-section info-section" data-index="24">
+  <div class="prose-block">
+    <div class="info-text" class:visible={v(24)}>
+      <span class="label">Who Are the Miners?</span>
+      <p>The ANP reports refer to those arrested only as "individuals." The reality, documented by <a href="https://humanglemedia.com/an-illicit-gold-economy-is-pushing-desperate-nigerians-into-southern-algeria/" target="_blank">HumAngle</a>, is more specific: many are young men from Nigeria's Borno State — a region devastated by Boko Haram — who travel Maiduguri → Kano → Maradi → Agadez → In Guezzam → Tamanrasset, a journey costing ₦250,000–300,000, often funded by selling family assets. Along the Trans-Saharan Highway they pass decomposed bodies of those who didn't make it. At <strong>35,658 arrests in 22 months</strong>, the data shows the scale of enforcement — but says nothing about what drives so many to keep coming. "There was nothing for me in Maiduguri," one miner told HumAngle. "I had no choice."</p>
+    </div>
+    <div class="report-image" class:visible={v(24)}>
+      <img src="{base}data/anp_output/images/2024-04-09/img_11.jpg" alt="ANP operational report — Djanet" loading="lazy" />
+      <p class="img-caption">Gold miners arrested — Djanet region, April 2024</p>
+    </div>
+  </div>
+</section>
 
     <!-- ═══════════════════════════════════════════
          SECTION 4 — WEAPONS
@@ -447,20 +449,20 @@
       </div>
     </section>
 
-    <!-- Weapons: Khenchela -->
-    <section class="scroll-section" data-index="27">
-      <div class="prose-block">
-        <span class="section-tag theme-tag" style="color:{themes.weapons}">04 — Weapons Seizures</span>
-        <h2>Khenchela</h2>
-        <p>Khenchela, adjacent to Batna and similarly mountainous, appears repeatedly in the weapons data. Operations here document both firearms and hunting rifles, suggesting a mix of criminal and civilian weapons circulating in the region.</p>
-      </div>
-    </section>
+<!-- Weapons: Khenchela -->
+<section class="scroll-section" data-index="27">
+  <div class="prose-block">
+    <span class="section-tag theme-tag" style="color:{themes.weapons}">04 — Weapons Seizures</span>
+    <h2>Khenchela — Arms Town</h2>
+    <p>Khenchela is not only a seizure hotspot — it is home to Algeria's own small arms industry. The <a href="https://www.menadefense.net/algerie/lecmk-monte-en-gamme-et-en-calibre/" target="_blank">Entreprise de Construction Militaire de Khenchela (ECMK)</a> has manufactured pistols, submachine guns and assault rifles since the late 1980s, and has recently expanded into Gatling guns and remote weapon stations under Chinese licence. The city sits at the intersection of Algeria's defence production and its ongoing arms interdiction operations — where the same mountainous Aurès terrain that shelters illegal weapons caches also houses the factories producing the state's own arsenal.</p>
+  </div>
+</section>
 
     <section class="scroll-section info-section" data-index="28">
       <div class="prose-block">
         <div class="report-image" class:visible={v(28)}>
-          <img src="{base}data/anp_output/images/2024-01-17/img_05.jpg" alt="ANP operational report — Khenchela" loading="lazy" />
-          <p class="img-caption">ANP press image — Khenchela region, January 2024</p>
+          <img src="{base}data\anp_output\images\2024-12-18\img_02.jpg" alt="ANP operational report — Khenchela" loading="lazy" />
+          <p class="img-caption">ANP press image — Khenchela region, December 2024</p>
         </div>
       </div>
     </section>
@@ -474,18 +476,19 @@
       </div>
     </section>
 
-    <section class="scroll-section info-section" data-index="30">
-      <div class="prose-block">
-        <div class="info-text" class:visible={v(30)}>
-          <span class="label">A Regional Pattern</span>
-          <p>The clustering of weapons seizures in the northeast — Batna, Khenchela, Constantine, Tebessa — points to a distinct regional dynamic compared to the south. These are not Saharan smuggling routes but denser, more urban networks operating in Algeria's most populated corridor.</p>
-        </div>
-        <div class="report-image" class:visible={v(30)}>
-          <img src="{base}data/anp_output/images/2025-02-27/img_01.jpg" alt="ANP operational report — Tebessa" loading="lazy" />
-          <p class="img-caption">Weapons seized in Tebessa, February 2025</p>
-        </div>
-      </div>
-    </section>
+ <section class="scroll-section info-section" data-index="30">
+  <div class="prose-block">
+    <div class="info-text" class:visible={v(30)}>
+      <span class="label">A Regional Pattern</span>
+      <p>The clustering of weapons seizures in the northeast — Batna, Khenchela, Constantine, Tebessa — points to a distinct regional dynamic compared to the south. These are not Saharan smuggling routes but denser, more urban networks operating in Algeria's most populated corridor, close to the Tunisian border where weapons have long circulated.</p>
+      <p>The illicit weapons economy cannot be separated from the region's legal arms flows. According to <a href="https://www.sipri.org/commentary/topical-backgrounder/2025/recent-trends-international-arms-transfers-middle-east-and-north-africa" target="_blank">SIPRI's 2025 analysis</a>, Algeria was the world's 21st largest arms importer in 2020–24 — with Russia supplying 48% of its major weapons, followed by China (19%) and Germany (14%). Neighbouring Morocco, locked in a long-standing rivalry with Algeria over Western Sahara, armed up simultaneously with US weapons (64%), Israeli missiles and Turkish drones. The more arms that flow into a region — legally or otherwise — the more circulate beyond state control. The hunting rifles, pistols and firearms that ANP units seize in the Aurès mountains are the downstream residue of a heavily militarised neighbourhood.</p>
+    </div>
+    <div class="report-image" class:visible={v(30)}>
+      <img src="{base}data\anp_output\images\2024-11-06\img_06.jpg" alt="ANP operational report — Constantine" loading="lazy" />
+      <p class="img-caption">Weapons seized — Wilaya Oum El Bouaghi, Constantine Military Region, February 2025</p>
+    </div>
+  </div>
+</section>
 
     <!-- ═══════════════════════════════════════════
          SECTION 5 — MIGRATION

@@ -17,7 +17,7 @@
     { center: [5.7693, 19.5662], zoom: 9, pitch: 40, bearing: 10 },    // 3 terrorism: In Guezzam
     { center: [2.6323, 28.0339], zoom: 4.5, pitch: 0,  bearing: 0   }, // 4 overview
     { center: [6.8607, 33.3612], zoom: 10,  pitch: 35, bearing: -5  }, // 5 drugs: el oued
-    { center: [5.3218, 31.9445], zoom: 10,  pitch: 30, bearing: 10  }, // 6 drugs: ouargla
+    { center: [-0.6417, 35.6969], zoom: 10, pitch: 30, bearing: 10 }, // 6 drugs: oran
     { center: [8.1212, 35.4036], zoom: 10,  pitch: 35, bearing: -8  }, // 7 drugs: tebessa
     { center: [5.5228, 22.7851], zoom: 8,   pitch: 45, bearing: 15  }, // 8 gold: tamanrasset
     { center: [8.4799, 26.5042], zoom: 9,   pitch: 40, bearing: -5  }, // 9 gold: illizi
@@ -36,7 +36,7 @@
     { id: 'bordj',       coords: [0.9503, 21.3298],  label: 'Bordj Badji Mokhtar',  steps: [2] },
     { id: 'In Guezzam',  coords: [5.7693, 19.5662],  label: 'In Guezzam',           steps: [3,9,10] },
     { id: 'eloued',      coords: [6.8607, 33.3612],  label: 'El Oued',              steps: [5] },
-    { id: 'ouargla',     coords: [5.3218, 31.9445],  label: 'Ouargla',              steps: [6] },
+    { id: 'oran',        coords: [-0.6417, 35.6969],  label: 'Oran',                 steps: [6] },
     { id: 'tebessa',     coords: [8.1212, 35.4036],  label: 'Tebessa',              steps: [7] },
     { id: 'djanet',      coords: [9.4844, 24.5553], label: 'Djanet',                steps: [10] },
     { id: 'batna',       coords: [6.1768, 35.5545],  label: 'Batna',                steps: [11] },
