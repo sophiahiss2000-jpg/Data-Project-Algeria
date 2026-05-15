@@ -242,7 +242,7 @@
     <section class="scroll-section info-section" data-index="8">
       <div class="prose-block">
         <div class="info-text" class:visible={v(8)}>
-          <span class="label">In Guezzam</span>
+          <span class="label">Trigger Warnings</span>
           <p>The military's communication strategy surrounding these operations is often explicitly deterrent. Official reports regularly publish graphic and sometimes unblurred images of dead bodies, weapons and captured equipment — visual performances of force. In a country where the memory of the civil war remains deeply embedded in public consciousness, these images reinforce a long-standing regime narrative: that the military alone stands between Algeria and a return to chaos. The reporting therefore serves to reproduce the state's self-presentation as the sole guarantor of order, stability and protection against Islamism and terrorism.</p>
         </div>
         <div class="report-image" class:visible={v(8)}>
