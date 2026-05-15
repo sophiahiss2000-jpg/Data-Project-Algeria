@@ -11,6 +11,7 @@
   let markers = [];
   
   const militaryRegionStep = 18;
+  const base = import.meta.env.BASE_URL;
 
   const steps = [
     { center: [2.6323, 28.0339], zoom: 4.0, pitch: 0, bearing: 0 },
@@ -214,7 +215,7 @@
   flyToStep(step);
 
   try {
-    const res = await fetch('/data/dza_admin1.geojson');
+    const res = await fetch(`${base}data/dza_admin1.geojson`);
 
     if (!res.ok) {
       throw new Error(`GeoJSON not found: ${res.status}`);
