@@ -81,18 +81,18 @@ src/
 
 public/
 └── data/
-    └── anp_output/
-        ├── anp_clean.csv                    <- 143 reports, 28 numeric columns + full text
-        ├── anp_image_locations.csv          <- 1,110 images with OCR-derived coordinates
-        ├── anp_location_themes.csv          <- Raw location-theme mentions
-        └── anp_location_themes_summary.csv
-        images/                              <- 1,110 downloaded ANP press images
+├── dza_admin1.geojson <- Algeria wilaya polygons from OCHA HDX COD-AB, grouped into military regions
+└── anp_output/
+├── anp_clean.csv <- 143 reports, 28 numeric columns + full text
+├── anp_image_locations.csv <- 1,110 images with OCR-derived coordinates
+├── anp_location_themes.csv <- Raw location-theme mentions
+├── anp_location_themes_summary.csv <- Aggregated location-theme mentions
+└── images/ <- 1,110 downloaded ANP press images
 
 R scripts:
-├── anp_scraper.R           <- Web scraper (reports + images)
-├── anp_clean.R             <- Table extraction + deduplication
+├── anp_scraper.R           <- Web scraper (numbers + images)
 ├── anp_ocr_geo.R           <- Image OCR + geolocation
-└── anp_fulltext_scraper.R  <- Full Arabic text re-scraper
+└── anp_text_comm.R         <- Full Report text re-scraper 
 ```
 
 ---
