@@ -22,6 +22,14 @@ This project is built on an **original dataset** assembled from primary sources.
 | Full-text scraping | Second-pass scraper | Complete Arabic report texts |
 | Text mining | Paragraph-level Arabic keyword matching | Location-theme frequency table |
 
+## Spatial Data
+
+Wilaya administrative boundaries are based on the Algeria COD-AB dataset provided by the United Nations Office for the Coordination of Humanitarian Affairs (OCHA) through the Humanitarian Data Exchange (HDX):
+
+https://data.humdata.org/dataset/cod-ab-dza
+
+The military regions visualised in this project are not official polygons but were reconstructed by grouping wilayas according to the publicly documented territorial jurisdictions of Algeria’s six military regions.
+
 **Key figures (Jan 2024 – Oct 2025):**
 - 54,769 migrants arrested
 - 35,658 people arrested for illegal gold mining
@@ -61,19 +69,6 @@ With a second scraping run covering 2022-2023, it would be possible to test whet
 
 ### Cross-referencing with NGO data
 Systematic cross-referencing of ANP migration arrest figures with Alarm Phone Sahara incident reports could shed light on the gap between official arrest statistics and documented expulsions.
-
----
-
-## Quick Start
-
-```bash
-npm install
-npm run dev
-```
-
-Open http://localhost:5173
-
----
 
 ## Project Structure
 
