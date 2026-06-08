@@ -127,13 +127,7 @@
     if (!map || s < 0 || s >= steps.length) return;
     map.flyTo({ ...steps[s], duration: 2200, essential: true });
     updateMarkers(s);
-  }
-  markers.forEach(({ marker, poi }) => {
-    marker.getElement().classList.toggle(
-      'visible',
-      poi.steps.includes(s)
-    );
-  });
+  };
   
   function updateMarkers(s) {
   markers.forEach(({ marker, poi }) => {

@@ -118,7 +118,8 @@
         <h2>Africa's Largest Country</h2>
         <p>Algeria shares borders with seven countries across the Sahara and Mediterranean. Its military — the Armée Nationale Populaire (ANP) — publishes weekly operational reports detailing arrests and seizures across five categories: terrorism, drugs, illegal gold mining, weapons and irregular migration.</p>
         <p>This analysis is based on <strong>143 weekly reports</strong> published between January 2024 and October 2025, scraped and geotagged directly from the Algerian Ministry of Defence website.</p>
-        <p>The army and intelligence services possess considerable decision-making power and executive authority in Algeria, yet data from the country's political "black box" remains largely inaccessible.        <p>These reports therefore offer an unusual glimpse into how the Algerian state documents and communicates its security operations.</p>
+        <p>The army and intelligence services possess considerable decision-making power and executive authority in Algeria, yet data from the country's political "black box" remains largely inaccessible.</p>
+        <p>These reports therefore offer an unusual glimpse into how the Algerian state documents and communicates its security operations.</p>
       </div>
     </section>
 
@@ -525,7 +526,7 @@
         <div class="info-text" class:visible={v(31)}>
           <span class="label">A Regional Pattern</span>
           <p>The clustering of weapons seizures in the northeast — Batna, Khenchela, Constantine, Tebessa — points to a distinct regional dynamic compared to the south. These are not Saharan smuggling routes but denser, more urban networks operating in Algeria's most populated corridor, close to the Tunisian border where weapons have long circulated.</p>
-          <p>The illicit weapons economy cannot be separated from the region's legal arms flows. According to <a href="https://www.sipri.org/commentary/topical-backgrounder/2025/recent-trends-international-arms-transfers-middle-east-and-north-africa" target="_blank">SIPRI's 2025 analysis</a>, Algeria was North Africa’s largest and one of the world’s top 20 arms importers in 2020–24— with Russia supplying 48% of its major weapons, followed by China (19%) and Germany (14%). Neighbouring Morocco, locked in a long-standing rivalry with Algeria over Western Sahara, armed up simultaneously with US weapons (64%), Israeli missiles and Turkish drones. The more arms that flow into a region — legally or otherwise — the more circulate beyond state control.</p>
+          <p>The illicit weapons economy cannot be separated from the region's legal arms flows. According to <a href="https://www.sipri.org/commentary/topical-backgrounder/2025/recent-trends-international-arms-transfers-middle-east-and-north-africa" target="_blank">SIPRI's 2025 analysis</a>, Algeria was North Africa's largest and one of the world's top 20 arms importers in 2020–24— with Russia supplying 48% of its major weapons, followed by China (19%) and Germany (14%). Neighbouring Morocco, locked in a long-standing rivalry with Algeria over Western Sahara, armed up simultaneously with US weapons (64%), Israeli missiles and Turkish drones. The more arms that flow into a region — legally or otherwise — the more circulate beyond state control.</p>
         </div>
         <div class="report-image" class:visible={v(31)}>
           <img src="{base}data/anp_output/images/2024-11-06/img_06.jpg" alt="ANP operational report — Constantine" loading="lazy" />
@@ -564,7 +565,7 @@
       <div class="prose-block">
         <div class="info-text" class:visible={v(34)}>
           <span class="label">Expulsions</span>
-          <p>Local NGOs like <a href="https://alarmephonesahara.info/en" target="_blank" rel="noopener noreferrer">Alarm Phone Sahara</a> have documented hundreds of cases of migrants abandoned in the desert after Algerian military expulsions — often without water, food or their belongings.Human rights organisations including <a href="https://www.hrw.org/news/2016/12/09/algeria-halt-summary-deportations" target="_blank" rel="noopener noreferrer">Human Rights Watch</a> and <a href="https://www.amnesty.org/en/documents/mde28/9512/2018/en/" target="_blank" rel="noopener noreferrer">Amnesty International</a> have condemmed these systematic <strong>summary expulsions</strong> of migrants from Algeria into the desert. The ANP reports document arrests in numbers but no pictures or what happens next.</p>
+          <p>Local NGOs like <a href="https://alarmephonesahara.info/en" target="_blank" rel="noopener noreferrer">Alarm Phone Sahara</a> have documented hundreds of cases of migrants abandoned in the desert after Algerian military expulsions — often without water, food or their belongings. Human rights organisations including <a href="https://www.hrw.org/news/2016/12/09/algeria-halt-summary-deportations" target="_blank" rel="noopener noreferrer">Human Rights Watch</a> and <a href="https://www.amnesty.org/en/documents/mde28/9512/2018/en/" target="_blank" rel="noopener noreferrer">Amnesty International</a> have condemned these systematic <strong>summary expulsions</strong> of migrants from Algeria into the desert. The ANP reports document arrests in numbers but no pictures or what happens next.</p>
         </div>
         <div class="report-image" class:visible={v(34)}>
           <img src="{base}data/anp_output/images/ANP_1200_dossier2_119db663b9.jpg" alt="Alarm Phone Sahara — Tamanrasset/Assamaka" loading="lazy" />
@@ -606,7 +607,7 @@
       <div class="prose-block">
         <span class="section-tag theme-tag" style="color:{themes.migration}">05 — Irregular Migration</span>
         <h2>Annaba — Port of Departure</h2>
-        <p>In Algeria and the wider Maghreb, irregular emigrants are commonly referred to as the <em>harraga</em>, derived from the Arabic word <em>ḥarga</em> (حَرْقَة, “burning”) — a metaphor for “burning” borders or identity papers in order to cross into Europe clandestinely. Annaba, close to both Tunisia and the Italian route across the central Mediterranean, has become one of the key departure points associated with this phenomenon. </p>
+        <p>In Algeria and the wider Maghreb, irregular emigrants are commonly referred to as the <em>harraga</em>, derived from the Arabic word <em>ḥarga</em> (حَرْقَة, "burning") — a metaphor for "burning" borders or identity papers in order to cross into Europe clandestinely. Annaba, close to both Tunisia and the Italian route across the central Mediterranean, has become one of the key departure points associated with this phenomenon.</p>
       </div>
     </section>
 
@@ -614,7 +615,7 @@
       <div class="prose-block">
         <div class="info-text" class:visible={v(38)}>
           <span class="label">What the Numbers Don't Show</span>
-          <p>Interviews conducted for this investigation suggest that Algeria’s migration governance operates through highly selective security logics: sub-Saharan migrants are disproportionately targeted in arrests and expulsions, whereas some groups — including Northern Malians from the Azawad region — often receive more flexible treatment because of ethnic ties, cross-border networks and regional stability considerations, within a system that officially recognises only Sahrawis, Palestinians and Syrians as broadly eligible for protection.</p>
+          <p>Interviews conducted for this investigation suggest that Algeria's migration governance operates through highly selective security logics: sub-Saharan migrants are disproportionately targeted in arrests and expulsions, whereas some groups — including Northern Malians from the Azawad region — often receive more flexible treatment because of ethnic ties, cross-border networks and regional stability considerations, within a system that officially recognises only Sahrawis, Palestinians and Syrians as broadly eligible for protection.</p>
         </div>
         <div class="report-image" class:visible={v(38)}>
           <img src="{base}data/anp_output/images/2024-10-02/img_11.jpg" alt="ANP operational report — Annaba" loading="lazy" />
@@ -622,8 +623,8 @@
         </div>
 
         <div class="end-note">
-            <p><strong>Data:</strong> Algerian Ministry of Defence operational reports, January 2024 – October 2025. Scraped and analysed by the author. Image geolocation via OCR + OpenStreetMap Nominatim.</p>
-            <p><strong>Methodology note:</strong> Aggregate statistics (arrests, seizures) are extracted from structured tables and are national totals — they cannot be attributed to individual cities. Location references for statistics in the article are derived from paragraph-level text analysis of 143 full report texts: a city name and theme keyword appearing in the same paragraph was used as a proxy for operational location. Totals should be treated with caution and triangulated with other sources for inference.</p>
+          <p><strong>Data:</strong> Algerian Ministry of Defence operational reports, January 2024 – October 2025. Scraped and analysed by the author. Image geolocation via OCR + OpenStreetMap Nominatim.</p>
+          <p><strong>Methodology note:</strong> Aggregate statistics (arrests, seizures) are extracted from structured tables and are national totals — they cannot be attributed to individual cities. Location references for statistics in the article are derived from paragraph-level text analysis of 143 full report texts: a city name and theme keyword appearing in the same paragraph was used as a proxy for operational location. Totals should be treated with caution and triangulated with other sources for inference.</p>
         </div>
       </div>
     </section>
@@ -632,21 +633,29 @@
 </div><!-- /scrolly-container -->
 
 <footer>
-<p>
-  Data: 
-  <a href="https://www.mdn.dz" target="_blank" rel="noopener noreferrer">
-    Algerian Ministry of National Defence
-  </a> ·
-  Wilaya boundaries:
-  <a href="https://data.humdata.org/dataset/cod-ab-dza" target="_blank" rel="noopener noreferrer">
-    OCHA HDX Algeria Administrative Boundaries (COD-AB)
-  </a> ·
-  Map © 
-  <a href="https://www.openstreetmap.org/copyright" target="_blank">
-    OpenStreetMap
-  </a> contributors ·
-  Built with Svelte + MapLibre GL
-</p>
+  <div class="footer-inner">
+    <p class="footer-attribution">
+      Data:
+      <a href="https://www.mdn.dz" target="_blank" rel="noopener noreferrer">Algerian Ministry of National Defence</a> ·
+      Wilaya boundaries:
+      <a href="https://data.humdata.org/dataset/cod-ab-dza" target="_blank" rel="noopener noreferrer">OCHA HDX Algeria Administrative Boundaries (COD-AB)</a> ·
+      Map ©
+      <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors ·
+      Built with Svelte + MapLibre GL
+    </p>
+    <div class="footer-license">
+      <p>
+        <strong>Article text &amp; data</strong> ©&nbsp;2026 Sophia Hiss —
+        licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-ND 4.0</a>.
+        You may share with attribution; no remixing or commercial use.
+      </p>
+      <p>
+        <strong>Code &amp; pipeline</strong> licensed under the
+        <a href="https://github.com/data-journalism-26/final-project-sophiahiss4/blob/main/LICENSE-CODE" target="_blank" rel="noopener noreferrer">MIT License</a>.
+      </p>
+    </div>
+  </div>
 </footer>
 
 <style>
@@ -658,40 +667,68 @@
     font-family: 'Source Serif 4', Georgia, serif;
     -webkit-font-smoothing: antialiased;
   }
-    .region-list { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1rem; }
-    .region-item {
-    display: grid; grid-template-columns: 3rem 6rem 1fr;
-    align-items: center; gap: 0.5rem;
-    border-left: 3px solid; padding: 0.4rem 0.6rem;
-    background: rgba(255,255,255,0.03); border-radius: 2px;
-    }
-    .region-code { font-weight: 700; font-size: 0.8rem; }
-    .region-name { font-size: 0.82rem; color: #f0e8d8; font-weight: 600; }
-    .region-desc { font-size: 0.75rem; color: #6a6060; line-height: 1.3; }
+
+  /* ── Links — ensure tap targets are readable ── */
+  :global(a) {
+    color: #c8a96e;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  :global(a:hover) { color: #f0e8d8; }
+
+  /* ── Region list ── */
+  .region-list { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1rem; }
+  .region-item {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.15rem 0.5rem;
+    border-left: 3px solid;
+    padding: 0.4rem 0.6rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 2px;
+  }
+  .region-code {
+    font-weight: 700; font-size: 0.8rem;
+    grid-row: 1; grid-column: 1;
+    align-self: center;
+  }
+  .region-name {
+    font-size: 0.82rem; color: #f0e8d8; font-weight: 600;
+    grid-row: 1; grid-column: 2;
+  }
+  .region-desc {
+    font-size: 0.75rem; color: #6a6060; line-height: 1.3;
+    grid-row: 2; grid-column: 2;
+  }
 
   /* ── Hero ── */
   .hero {
-    min-height: 100vh;
+    min-height: 100svh; /* svh avoids mobile browser chrome issues */
     display: flex; align-items: center; justify-content: center;
     background: radial-gradient(ellipse at 60% 40%, #1a1208 0%, #08080f 70%);
-    padding: 2rem; position: relative; overflow: hidden;
+    padding: 2rem 1.25rem;
+    position: relative; overflow: hidden;
   }
-  .hero-inner { max-width: 680px; text-align: center; position: relative; z-index: 1; }
-
+  .hero-inner {
+    max-width: 680px; text-align: center;
+    position: relative; z-index: 1;
+  }
   .kicker {
-    font-size: 0.75rem; text-transform: uppercase;
-    letter-spacing: 0.2em; color: #c8a96e; margin-bottom: 1.5rem;
+    font-size: 0.7rem; text-transform: uppercase;
+    letter-spacing: 0.2em; color: #c8a96e; margin-bottom: 1.25rem;
   }
   .hero-inner h1 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(2.4rem, 6vw, 5rem);
+    font-size: clamp(2rem, 8vw, 5rem);
     font-weight: 900; line-height: 1.05;
-    color: #f0e8d8; margin-bottom: 1.5rem;
+    color: #f0e8d8; margin-bottom: 1.25rem;
   }
   .hero-inner h1 em { color: #c8a96e; font-style: italic; }
   .subtitle {
-    font-size: 1.05rem; line-height: 1.7; color: #9a9080;
-    max-width: 540px; margin: 0 auto 3rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+    line-height: 1.7; color: #9a9080;
+    max-width: 540px; margin: 0 auto 2.5rem;
   }
   .scroll-hint {
     display: flex; flex-direction: column; align-items: center;
@@ -702,37 +739,48 @@
   .scroll-hint svg { width: 20px; height: 20px; }
   @keyframes bounce {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(6px); }
+    50%       { transform: translateY(6px); }
   }
 
-  /* ── Layout ── */
+  /* ══════════════════════════════════════════════
+     SCROLLY LAYOUT — desktop: side-by-side
+     mobile:         map on top, prose below
+  ══════════════════════════════════════════════ */
   .scrolly-container {
     display: grid;
-    grid-template-columns: 1fr 420px;
+    grid-template-columns: 1fr 420px; /* map left, prose right on desktop */
   }
+
+  /* ── Sticky map ── */
   .map-sticky {
     position: sticky; top: 0; height: 100vh;
-    align-self: start; background: #08080f; overflow: hidden;
+    align-self: start;
+    background: #08080f; overflow: hidden;
+    order: 1; /* map first column on desktop */
   }
   .step-counter {
-    position: absolute; top: 1.5rem; left: 1.5rem;
+    position: absolute; top: 1rem; left: 1rem;
     background: rgba(8,8,15,0.82);
     border: 1px solid rgba(200,169,110,0.3);
-    padding: 0.4rem 0.9rem; border-radius: 3px;
+    padding: 0.35rem 0.8rem; border-radius: 3px;
     z-index: 10; backdrop-filter: blur(6px);
   }
   .step-counter span {
-    font-size: 0.75rem; text-transform: uppercase;
+    font-size: 0.72rem; text-transform: uppercase;
     letter-spacing: 0.12em; color: #c8a96e;
   }
+
+  /* ── Foreground prose ── */
   .foreground {
     display: flex; flex-direction: column;
     padding: 2rem 1.5rem;
+    order: 2;
   }
 
   /* ── Sections ── */
   .scroll-section {
-    min-height: 100vh; display: flex; align-items: center;
+    min-height: 100vh;
+    display: flex; align-items: center;
   }
   .info-section { min-height: 70vh; }
 
@@ -740,7 +788,8 @@
     width: 100%;
     background: rgba(8,8,15,0.88);
     border: 1px solid rgba(200,169,110,0.15);
-    border-radius: 4px; padding: 2rem;
+    border-radius: 4px;
+    padding: 1.75rem 1.5rem;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 40px rgba(0,0,0,0.5);
   }
@@ -754,34 +803,36 @@
 
   .prose-block h2 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.8rem; font-weight: 700;
-    color: #f0e8d8; line-height: 1.15; margin-bottom: 1rem;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    font-weight: 700; color: #f0e8d8;
+    line-height: 1.2; margin-bottom: 1rem;
   }
   .prose-block p {
-    font-size: 0.95rem; line-height: 1.75;
-    color: #9a9080; margin-bottom: 0.85rem;
+    font-size: clamp(0.88rem, 2.2vw, 0.95rem);
+    line-height: 1.75; color: #9a9080;
+    margin-bottom: 0.85rem;
   }
   .prose-block p:last-child { margin-bottom: 0; }
   .prose-block strong { color: #c8a96e; }
-  .prose-block em { font-style: italic; color: #b8a898; }
+  .prose-block em     { font-style: italic; color: #b8a898; }
 
   /* ── Stat grid ── */
   .stat-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem; margin-bottom: 0.5rem;
     opacity: 0; transform: translateY(12px);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
   .stat-grid.visible { opacity: 1; transform: translateY(0); }
-
-  .stat-item { display: flex; flex-direction: column; gap: 0.3rem; }
+  .stat-item  { display: flex; flex-direction: column; gap: 0.3rem; }
   .stat-value {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 2rem; font-weight: 900; line-height: 1;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 900; line-height: 1;
   }
   .stat-label {
-    font-size: 0.72rem; text-transform: uppercase;
+    font-size: 0.7rem; text-transform: uppercase;
     letter-spacing: 0.08em; color: #6a6060; line-height: 1.3;
   }
 
@@ -789,7 +840,7 @@
   .info-text {
     background: rgba(200,169,110,0.06);
     border-left: 3px solid #c8a96e;
-    border-radius: 2px; padding: 1rem 1.2rem;
+    border-radius: 2px; padding: 1rem 1.1rem;
     margin-bottom: 1rem;
     opacity: 0; transform: translateY(12px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -801,8 +852,8 @@
     color: #c8a96e; margin-bottom: 0.5rem;
   }
   .info-text p {
-    font-size: 0.88rem; line-height: 1.7;
-    color: #9a9080; margin: 0;
+    font-size: clamp(0.82rem, 2vw, 0.88rem);
+    line-height: 1.7; color: #9a9080; margin: 0;
   }
 
   /* ── Images ── */
@@ -823,22 +874,6 @@
     margin-bottom: 0 !important;
   }
 
-  /* ── Placeholder image ── */
-  .placeholder-image {
-    margin-top: 1rem;
-    opacity: 0; transform: translateY(8px);
-    transition: opacity 0.7s ease 0.15s, transform 0.7s ease 0.15s;
-  }
-  .placeholder-image.visible { opacity: 1; transform: translateY(0); }
-  .img-placeholder {
-    border: 2px dashed rgba(200,169,110,0.3);
-    border-radius: 3px; padding: 2rem;
-    text-align: center; color: #504838;
-  }
-  .img-placeholder span { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
-  .img-placeholder p { font-size: 0.82rem; color: #504838; margin-bottom: 0.25rem !important; }
-  .placeholder-note { font-size: 0.72rem !important; font-family: monospace; }
-
   /* ── End note ── */
   .end-note {
     margin-top: 2rem; padding-top: 1.5rem;
@@ -848,18 +883,118 @@
 
   /* ── Footer ── */
   footer {
-    background: #04040a; padding: 2rem 4vw;
+    background: #04040a; padding: 2rem 0;
     border-top: 1px solid rgba(200,169,110,0.1);
   }
-  footer p { font-size: 0.75rem; color: #403830; }
-  footer a { color: #6a5840; text-decoration: none; }
-  footer a:hover { color: #c8a96e; }
+  .footer-inner {
+    max-width: 900px; margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .footer-attribution {
+    font-size: 0.75rem; color: #403830;
+    line-height: 1.6;
+  }
+  .footer-attribution a {
+    color: #6a5840; text-decoration: none;
+    min-height: 44px; display: inline; /* tap target handled by line-height */
+  }
+  .footer-attribution a:hover { color: #c8a96e; }
 
-  /* ── Mobile ── */
-  @media (max-width: 800px) {
-    .scrolly-container { grid-template-columns: 1fr; }
-    .map-sticky { height: 50vh; }
-    .scroll-section { min-height: auto; padding: 2rem 0; }
-    .info-section { min-height: auto; }
+  .footer-license {
+    border-top: 1px solid rgba(200,169,110,0.08);
+    padding-top: 1rem;
+    display: flex; flex-direction: column; gap: 0.35rem;
+  }
+  .footer-license p {
+    font-size: 0.72rem; color: #504838;
+    line-height: 1.55; margin: 0;
+  }
+  .footer-license strong { color: #6a5840; }
+  .footer-license a { color: #6a5840; }
+  .footer-license a:hover { color: #c8a96e; }
+
+  /* ══════════════════════════════════════════════
+     MOBILE  ≤ 700px
+     Stack: map (40svh) pinned at top, prose scrolls below
+  ══════════════════════════════════════════════ */
+  @media (max-width: 700px) {
+
+    /* Switch to single-column stack: map on top */
+    .scrolly-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+    }
+
+    /* Map sits at the top as a normal (non-sticky) block
+       so it doesn't fight the foreground for space */
+    .map-sticky {
+      position: sticky;
+      top: 0;
+      height: 40svh;        /* shorter on phone */
+      min-height: 220px;
+      order: 1;
+      z-index: 10;
+    }
+
+    .step-counter {
+      top: 0.5rem; left: 0.5rem;
+      padding: 0.25rem 0.6rem;
+    }
+
+    /* Foreground prose sits below the map */
+    .foreground {
+      order: 2;
+      padding: 1.25rem 1rem;
+    }
+
+    /* Sections don't need full-viewport height on mobile —
+       the map is always visible above */
+    .scroll-section {
+      min-height: auto;
+      padding: 2rem 0;
+    }
+    .info-section {
+      min-height: auto;
+      padding: 1.5rem 0;
+    }
+
+    .prose-block {
+      padding: 1.25rem 1rem;
+    }
+
+    /* Stat numbers scale down gracefully */
+    .stat-grid {
+      grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+      gap: 0.75rem;
+    }
+
+    /* Region list: tighten on small screens */
+    .region-item {
+      grid-template-columns: 2.75rem 1fr;
+    }
+    .region-code { font-size: 0.72rem; }
+    .region-name { font-size: 0.78rem; }
+    .region-desc { font-size: 0.7rem; }
+
+    /* Footer wraps gracefully */
+    .footer-inner { padding: 0 1rem; }
+    .footer-attribution { font-size: 0.7rem; }
+
+    /* Ensure all links are comfortably tappable */
+    .prose-block a,
+    .info-text a {
+      display: inline-block;
+      min-height: 44px;
+      line-height: 44px;
+      padding: 0 1px;
+    }
+  }
+
+  /* ── Narrow edge case (≤ 380px) ── */
+  @media (max-width: 380px) {
+    .hero-inner h1 { font-size: 1.85rem; }
+    .stat-value    { font-size: 1.35rem; }
+    .stat-grid     { grid-template-columns: 1fr 1fr; }
   }
 </style>
