@@ -7,6 +7,20 @@ A scrollytelling investigation built with **Svelte**, **MapLibre GL JS**, and **
 
 ---
 
+## License
+
+This project uses a dual license:
+
+**Code & Pipeline** — all `.html`, `.css`, `.js`, `.svelte`, `.R` files and build scripts are licensed under the [MIT License](LICENSE-CODE).
+You are free to use, copy, modify, and distribute the code with attribution.
+
+**Article Content & Data** — the article text, data visualisations, charts, and all datasets (`.csv`, `.geojson`) are licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+You may share the content with attribution, but you may not remix it, adapt it, or use it commercially. Quotation with attribution is permitted under fair use.
+
+> © 2026 Sophia Hiss. The underlying data was collected from primary sources by the author.
+
+---
+
 ## The Dataset
 
 This project is built on an **original dataset** assembled from primary sources. No pre-existing dataset was used.
@@ -28,7 +42,7 @@ Wilaya administrative boundaries are based on the Algeria COD-AB dataset provide
 
 https://data.humdata.org/dataset/cod-ab-dza
 
-The military regions visualised in this project are not official polygons but were reconstructed by grouping wilayas according to the publicly documented territorial jurisdictions of Algeria’s six military regions.
+The military regions visualised in this project are not official polygons but were reconstructed by grouping wilayas according to the publicly documented territorial jurisdictions of Algeria's six military regions.
 
 **Key figures (Jan 2024 – Oct 2025):**
 - 54,769 migrants arrested
@@ -40,6 +54,7 @@ The military regions visualised in this project are not official polygons but we
 - 981 firearms seized
 
 ---
+
 ## Content Warning
 
 This repository contains press images downloaded directly from the Algerian Ministry of Defence website. These images are unfiltered official military documentation and include graphic content — among them photographs of killed individuals, human remains, and victims of violence. Viewer discretion is strongly advised.
@@ -81,18 +96,18 @@ src/
 
 public/
 └── data/
-├── dza_admin1.geojson <- Algeria wilaya polygons from OCHA HDX COD-AB, grouped into military regions
-└── anp_output/
-├── anp_clean.csv <- 143 reports, 28 numeric columns + full text
-├── anp_image_locations.csv <- 1,110 images with OCR-derived coordinates
-├── anp_location_themes.csv <- Raw location-theme mentions
-├── anp_location_themes_summary.csv <- Aggregated location-theme mentions
-└── images/ <- 1,110 downloaded ANP press images
+    ├── dza_admin1.geojson  <- Algeria wilaya polygons from OCHA HDX COD-AB, grouped into military regions
+    └── anp_output/
+        ├── anp_clean.csv                      <- 143 reports, 28 numeric columns + full text
+        ├── anp_image_locations.csv            <- 1,110 images with OCR-derived coordinates
+        ├── anp_location_themes.csv            <- Raw location-theme mentions
+        ├── anp_location_themes_summary.csv    <- Aggregated location-theme mentions
+        └── images/                            <- 1,110 downloaded ANP press images
 
 R scripts:
 ├── anp_scraper.R           <- Web scraper (numbers + images)
 ├── anp_ocr_geo.R           <- Image OCR + geolocation
-└── anp_text_comm.R         <- Full Report text re-scraper 
+└── anp_text_comm.R         <- Full report text re-scraper
 ```
 
 ---
