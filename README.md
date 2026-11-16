@@ -3,8 +3,7 @@
 
 A scrollytelling investigation built with **Svelte**, **MapLibre GL JS**, and **satellite imagery**, analysing an original dataset of 143 weekly operational reports published by Algeria's Armée Nationale Populaire (ANP) between January 2024 and October 2025.
 
-🔗 **Live:** https://data-journalism-26.github.io/final-project-sophiahiss4/
-
+🔗 **Live:** https://sophiahiss2000-jpg.github.io/Data-Project-Algeria/
 ---
 
 ## License
